@@ -1,0 +1,1403 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="JavaDesigner" version="4">
+  <OBJECT>
+    <ID name="JavaDesigner" mc="Standard.ModuleComponent" uid="003800a8-0000-022e-0000-000000000000"/>
+    <ATTRIBUTES>
+      <ATT name="LicenseKey">0</ATT>
+      <ATT name="MajVersion">3</ATT>
+      <ATT name="MinVersion">5</ATT>
+      <ATT name="MinMinVersion"><![CDATA[0]]></ATT>
+      <ATT name="MinBinVersionCompatibility"></ATT>
+      <ATT name="JavaClassName"><![CDATA[org.modelio.module.javadesigner.impl.JavaDesignerModule]]></ATT>
+      <ATT name="State">SoModuleStateActivated</ATT>
+      <ATT name="IsActive">false</ATT>
+      <ATT name="IsMain">false</ATT>
+      <ATT name="IsElementary">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[JavaDesigner]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedProfile">
+        <COMPID name="JavaExtensions" mc="Standard.Profile" uid="25801104-0000-1069-0000-000000000000"/>
+        <COMPID name="JavaCompatibility" mc="Standard.Profile" uid="01ec24fc-0000-0208-0000-000000000000"/>
+      </COMP>
+      <COMP relation="ModuleParameter">
+        <OBJECT>
+          <ID name="GenerationMode" mc="Standard.ModuleParameter" uid="01ec25e8-0000-0700-0000-000000000000"/>
+          <ATTRIBUTES>
+            <ATT name="GroupName"></ATT>
+            <ATT name="Type">TYPE_PARAM_ENUM</ATT>
+            <ATT name="IsUserRead">true</ATT>
+            <ATT name="IsUserWrite">true</ATT>
+            <ATT name="IsApiRead">true</ATT>
+            <ATT name="IsApiWrite">true</ATT>
+            <ATT name="DefaultValue"></ATT>
+            <ATT name="Name"><![CDATA[GenerationMode]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="EnumType">
+              <REFOBJ>
+                <ID name="GenerationMode" mc="Standard.Enumeration" uid="4fbaa49d-252f-4991-894c-0a6c656b4e08"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="RetrieveDefaultBehaviour" mc="Standard.ModuleParameter" uid="01ec25e8-0000-0706-0000-000000000000"/>
+          <ATTRIBUTES>
+            <ATT name="GroupName"></ATT>
+            <ATT name="Type">TYPE_PARAM_ENUM</ATT>
+            <ATT name="IsUserRead">true</ATT>
+            <ATT name="IsUserWrite">true</ATT>
+            <ATT name="IsApiRead">true</ATT>
+            <ATT name="IsApiWrite">true</ATT>
+            <ATT name="DefaultValue"></ATT>
+            <ATT name="Name"><![CDATA[RetrieveDefaultBehaviour]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="EnumType">
+              <REFOBJ>
+                <ID name="RetrieveDefaultBehaviour" mc="Standard.Enumeration" uid="d5c44874-0b49-4811-9e7a-c426acecec9d"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="Encoding" mc="Standard.ModuleParameter" uid="6a276a28-0bea-11df-b8eb-0019b95c085c"/>
+          <ATTRIBUTES>
+            <ATT name="GroupName"></ATT>
+            <ATT name="Type">TYPE_PARAM_ENUM</ATT>
+            <ATT name="IsUserRead">true</ATT>
+            <ATT name="IsUserWrite">true</ATT>
+            <ATT name="IsApiRead">true</ATT>
+            <ATT name="IsApiWrite">true</ATT>
+            <ATT name="DefaultValue"></ATT>
+            <ATT name="Name"><![CDATA[Encoding]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="EnumType">
+              <REFOBJ>
+                <ID name="Encoding" mc="Standard.Enumeration" uid="bce9de1e-c8a1-49ec-9cd4-67cedf67876c"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="JavaCompatibility" mc="Standard.ModuleParameter" uid="cec5209f-5a2c-4897-8575-757650e8ab02"/>
+          <ATTRIBUTES>
+            <ATT name="GroupName"></ATT>
+            <ATT name="Type">TYPE_PARAM_ENUM</ATT>
+            <ATT name="IsUserRead">true</ATT>
+            <ATT name="IsUserWrite">true</ATT>
+            <ATT name="IsApiRead">true</ATT>
+            <ATT name="IsApiWrite">true</ATT>
+            <ATT name="DefaultValue"></ATT>
+            <ATT name="Name"><![CDATA[JavaCompatibility]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="EnumType">
+              <REFOBJ>
+                <ID name="JavaCompatibility" mc="Standard.Enumeration" uid="0f9d2006-6793-40ca-93ab-7ab882396004"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="AccessibleClasses" mc="Standard.ModuleParameter" uid="01ec25e8-0000-070f-0000-000000000000"/>
+          <ATTRIBUTES>
+            <ATT name="GroupName"></ATT>
+            <ATT name="Type">TYPE_PARAM_STRING</ATT>
+            <ATT name="IsUserRead">true</ATT>
+            <ATT name="IsUserWrite">true</ATT>
+            <ATT name="IsApiRead">true</ATT>
+            <ATT name="IsApiWrite">true</ATT>
+            <ATT name="DefaultValue"></ATT>
+            <ATT name="Name"><![CDATA[AccessibleClasses]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="JDKPath" mc="Standard.ModuleParameter" uid="01ec25e8-0000-070d-0000-000000000000"/>
+          <ATTRIBUTES>
+            <ATT name="GroupName"></ATT>
+            <ATT name="Type">TYPE_PARAM_DIRECTORY</ATT>
+            <ATT name="IsUserRead">true</ATT>
+            <ATT name="IsUserWrite">true</ATT>
+            <ATT name="IsApiRead">true</ATT>
+            <ATT name="IsApiWrite">true</ATT>
+            <ATT name="DefaultValue"></ATT>
+            <ATT name="Name"><![CDATA[JDKPath]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="GenerationPath" mc="Standard.ModuleParameter" uid="01ec25e8-0000-0711-0000-000000000000"/>
+          <ATTRIBUTES>
+            <ATT name="GroupName"></ATT>
+            <ATT name="Type">TYPE_PARAM_DIRECTORY</ATT>
+            <ATT name="IsUserRead">true</ATT>
+            <ATT name="IsUserWrite">true</ATT>
+            <ATT name="IsApiRead">true</ATT>
+            <ATT name="IsApiWrite">true</ATT>
+            <ATT name="DefaultValue"></ATT>
+            <ATT name="Name"><![CDATA[GenerationPath]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="ComponentSubPath" mc="Standard.ModuleParameter" uid="221d7c72-ca01-4094-97db-c9040b08fc75"/>
+          <ATTRIBUTES>
+            <ATT name="GroupName"></ATT>
+            <ATT name="Type">TYPE_PARAM_STRING</ATT>
+            <ATT name="IsUserRead">true</ATT>
+            <ATT name="IsUserWrite">true</ATT>
+            <ATT name="IsApiRead">true</ATT>
+            <ATT name="IsApiWrite">true</ATT>
+            <ATT name="DefaultValue"></ATT>
+            <ATT name="Name"><![CDATA[ComponentSubPath]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="JavahGenerationPath" mc="Standard.ModuleParameter" uid="01ec25e8-0000-0713-0000-000000000000"/>
+          <ATTRIBUTES>
+            <ATT name="GroupName"></ATT>
+            <ATT name="Type">TYPE_PARAM_DIRECTORY</ATT>
+            <ATT name="IsUserRead">true</ATT>
+            <ATT name="IsUserWrite">true</ATT>
+            <ATT name="IsApiRead">true</ATT>
+            <ATT name="IsApiWrite">true</ATT>
+            <ATT name="DefaultValue"></ATT>
+            <ATT name="Name"><![CDATA[JavahGenerationPath]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="CompilationPath" mc="Standard.ModuleParameter" uid="01ec25e8-0000-0715-0000-000000000000"/>
+          <ATTRIBUTES>
+            <ATT name="GroupName"></ATT>
+            <ATT name="Type">TYPE_PARAM_DIRECTORY</ATT>
+            <ATT name="IsUserRead">true</ATT>
+            <ATT name="IsUserWrite">true</ATT>
+            <ATT name="IsApiRead">true</ATT>
+            <ATT name="IsApiWrite">true</ATT>
+            <ATT name="DefaultValue"></ATT>
+            <ATT name="Name"><![CDATA[CompilationPath]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="JarFilePath" mc="Standard.ModuleParameter" uid="01ec25e8-0000-0717-0000-000000000000"/>
+          <ATTRIBUTES>
+            <ATT name="GroupName"></ATT>
+            <ATT name="Type">TYPE_PARAM_DIRECTORY</ATT>
+            <ATT name="IsUserRead">true</ATT>
+            <ATT name="IsUserWrite">true</ATT>
+            <ATT name="IsApiRead">true</ATT>
+            <ATT name="IsApiWrite">true</ATT>
+            <ATT name="DefaultValue"></ATT>
+            <ATT name="Name"><![CDATA[JarFilePath]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="GenDocPath" mc="Standard.ModuleParameter" uid="01ec25e8-0000-0719-0000-000000000000"/>
+          <ATTRIBUTES>
+            <ATT name="GroupName"></ATT>
+            <ATT name="Type">TYPE_PARAM_DIRECTORY</ATT>
+            <ATT name="IsUserRead">true</ATT>
+            <ATT name="IsUserWrite">true</ATT>
+            <ATT name="IsApiRead">true</ATT>
+            <ATT name="IsApiWrite">true</ATT>
+            <ATT name="DefaultValue"></ATT>
+            <ATT name="Name"><![CDATA[GenDocPath]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="CustomizationFile" mc="Standard.ModuleParameter" uid="01ec25e8-0000-071d-0000-000000000000"/>
+          <ATTRIBUTES>
+            <ATT name="GroupName"></ATT>
+            <ATT name="Type">TYPE_PARAM_FILE</ATT>
+            <ATT name="IsUserRead">true</ATT>
+            <ATT name="IsUserWrite">true</ATT>
+            <ATT name="IsApiRead">true</ATT>
+            <ATT name="IsApiWrite">true</ATT>
+            <ATT name="DefaultValue"></ATT>
+            <ATT name="Name"><![CDATA[CustomizationFile]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="CopyrightFile" mc="Standard.ModuleParameter" uid="6687a8d5-3e95-11e0-8fc3-002564c97630"/>
+          <ATTRIBUTES>
+            <ATT name="GroupName"></ATT>
+            <ATT name="Type">TYPE_PARAM_FILE</ATT>
+            <ATT name="IsUserRead">true</ATT>
+            <ATT name="IsUserWrite">true</ATT>
+            <ATT name="IsApiRead">true</ATT>
+            <ATT name="IsApiWrite">true</ATT>
+            <ATT name="DefaultValue"></ATT>
+            <ATT name="Name"><![CDATA[CopyrightFile]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="ErrorOnFirstWarning" mc="Standard.ModuleParameter" uid="01ec25e8-0000-071f-0000-000000000000"/>
+          <ATTRIBUTES>
+            <ATT name="GroupName"></ATT>
+            <ATT name="Type">TYPE_PARAM_BOOLEAN</ATT>
+            <ATT name="IsUserRead">true</ATT>
+            <ATT name="IsUserWrite">true</ATT>
+            <ATT name="IsApiRead">true</ATT>
+            <ATT name="IsApiWrite">true</ATT>
+            <ATT name="DefaultValue"></ATT>
+            <ATT name="Name"><![CDATA[ErrorOnFirstWarning]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="FullNameGeneration" mc="Standard.ModuleParameter" uid="01ec25e8-0000-0723-0000-000000000000"/>
+          <ATTRIBUTES>
+            <ATT name="GroupName"></ATT>
+            <ATT name="Type">TYPE_PARAM_BOOLEAN</ATT>
+            <ATT name="IsUserRead">true</ATT>
+            <ATT name="IsUserWrite">true</ATT>
+            <ATT name="IsApiRead">true</ATT>
+            <ATT name="IsApiWrite">true</ATT>
+            <ATT name="DefaultValue"></ATT>
+            <ATT name="Name"><![CDATA[FullNameGeneration]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="GenerateFinalParameters" mc="Standard.ModuleParameter" uid="ac898f03-b516-11df-b5f1-002564c97630"/>
+          <ATTRIBUTES>
+            <ATT name="GroupName"></ATT>
+            <ATT name="Type">TYPE_PARAM_BOOLEAN</ATT>
+            <ATT name="IsUserRead">true</ATT>
+            <ATT name="IsUserWrite">true</ATT>
+            <ATT name="IsApiRead">true</ATT>
+            <ATT name="IsApiWrite">true</ATT>
+            <ATT name="DefaultValue"></ATT>
+            <ATT name="Name"><![CDATA[GenerateFinalParameters]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="GenerateDefaultReturn" mc="Standard.ModuleParameter" uid="5ffba198-56f9-11e1-a8d2-002564c97630"/>
+          <ATTRIBUTES>
+            <ATT name="GroupName"></ATT>
+            <ATT name="Type">TYPE_PARAM_BOOLEAN</ATT>
+            <ATT name="IsUserRead">true</ATT>
+            <ATT name="IsUserWrite">true</ATT>
+            <ATT name="IsApiRead">true</ATT>
+            <ATT name="IsApiWrite">true</ATT>
+            <ATT name="DefaultValue"></ATT>
+            <ATT name="Name"><![CDATA[GenerateDefaultReturn]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="InterfaceImplementation" mc="Standard.ModuleParameter" uid="01ec2730-0000-04bd-0000-000000000000"/>
+          <ATTRIBUTES>
+            <ATT name="GroupName"></ATT>
+            <ATT name="Type">TYPE_PARAM_ENUM</ATT>
+            <ATT name="IsUserRead">true</ATT>
+            <ATT name="IsUserWrite">true</ATT>
+            <ATT name="IsApiRead">true</ATT>
+            <ATT name="IsApiWrite">true</ATT>
+            <ATT name="DefaultValue"></ATT>
+            <ATT name="Name"><![CDATA[InterfaceImplementation]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="EnumType">
+              <REFOBJ>
+                <ID name="InterfaceImplementation" mc="Standard.Enumeration" uid="ca97a520-8351-4559-93a7-a8588ddaced7"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="AccessorsGeneration" mc="Standard.ModuleParameter" uid="01ec25e8-0000-0725-0000-000000000000"/>
+          <ATTRIBUTES>
+            <ATT name="GroupName"></ATT>
+            <ATT name="Type">TYPE_PARAM_ENUM</ATT>
+            <ATT name="IsUserRead">true</ATT>
+            <ATT name="IsUserWrite">true</ATT>
+            <ATT name="IsApiRead">true</ATT>
+            <ATT name="IsApiWrite">true</ATT>
+            <ATT name="DefaultValue"></ATT>
+            <ATT name="Name"><![CDATA[AccessorsGeneration]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="EnumType">
+              <REFOBJ>
+                <ID name="AccessorsGeneration" mc="Standard.Enumeration" uid="d1a84ecd-60ab-4aa7-9754-0f9da56df34e"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="PublicAccessorVisibility" mc="Standard.ModuleParameter" uid="01ec25e8-0000-072a-0000-000000000000"/>
+          <ATTRIBUTES>
+            <ATT name="GroupName"></ATT>
+            <ATT name="Type">TYPE_PARAM_ENUM</ATT>
+            <ATT name="IsUserRead">true</ATT>
+            <ATT name="IsUserWrite">true</ATT>
+            <ATT name="IsApiRead">true</ATT>
+            <ATT name="IsApiWrite">true</ATT>
+            <ATT name="DefaultValue"></ATT>
+            <ATT name="Name"><![CDATA[PublicAccessorVisibility]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="EnumType">
+              <REFOBJ>
+                <ID name="PublicAccessorVisibility" mc="Standard.Enumeration" uid="0e077c2f-513a-4e40-be5a-3f822a07421d"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="PublicModifierVisibility" mc="Standard.ModuleParameter" uid="01ec25e8-0000-0730-0000-000000000000"/>
+          <ATTRIBUTES>
+            <ATT name="GroupName"></ATT>
+            <ATT name="Type">TYPE_PARAM_ENUM</ATT>
+            <ATT name="IsUserRead">true</ATT>
+            <ATT name="IsUserWrite">true</ATT>
+            <ATT name="IsApiRead">true</ATT>
+            <ATT name="IsApiWrite">true</ATT>
+            <ATT name="DefaultValue"></ATT>
+            <ATT name="Name"><![CDATA[PublicModifierVisibility]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="EnumType">
+              <REFOBJ>
+                <ID name="PublicModifierVisibility" mc="Standard.Enumeration" uid="a3dd6f72-2c1b-44d9-a7ff-e0eb701dc307"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="ProtectedAccessorVisibility" mc="Standard.ModuleParameter" uid="01ec25e8-0000-0736-0000-000000000000"/>
+          <ATTRIBUTES>
+            <ATT name="GroupName"></ATT>
+            <ATT name="Type">TYPE_PARAM_ENUM</ATT>
+            <ATT name="IsUserRead">true</ATT>
+            <ATT name="IsUserWrite">true</ATT>
+            <ATT name="IsApiRead">true</ATT>
+            <ATT name="IsApiWrite">true</ATT>
+            <ATT name="DefaultValue"></ATT>
+            <ATT name="Name"><![CDATA[ProtectedAccessorVisibility]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="EnumType">
+              <REFOBJ>
+                <ID name="ProtectedAccessorVisibility" mc="Standard.Enumeration" uid="e1a085ca-6a0e-4fad-b2b4-a96987f4ffb9"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="ProtectedModifierVisibility" mc="Standard.ModuleParameter" uid="01ec25e8-0000-073c-0000-000000000000"/>
+          <ATTRIBUTES>
+            <ATT name="GroupName"></ATT>
+            <ATT name="Type">TYPE_PARAM_ENUM</ATT>
+            <ATT name="IsUserRead">true</ATT>
+            <ATT name="IsUserWrite">true</ATT>
+            <ATT name="IsApiRead">true</ATT>
+            <ATT name="IsApiWrite">true</ATT>
+            <ATT name="DefaultValue"></ATT>
+            <ATT name="Name"><![CDATA[ProtectedModifierVisibility]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="EnumType">
+              <REFOBJ>
+                <ID name="ProtectedModifierVisibility" mc="Standard.Enumeration" uid="32a5633f-31a6-4583-bc01-5b5a6c691f57"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="FriendlyAccessorVisibility" mc="Standard.ModuleParameter" uid="01ec25e8-0000-0742-0000-000000000000"/>
+          <ATTRIBUTES>
+            <ATT name="GroupName"></ATT>
+            <ATT name="Type">TYPE_PARAM_ENUM</ATT>
+            <ATT name="IsUserRead">true</ATT>
+            <ATT name="IsUserWrite">true</ATT>
+            <ATT name="IsApiRead">true</ATT>
+            <ATT name="IsApiWrite">true</ATT>
+            <ATT name="DefaultValue"></ATT>
+            <ATT name="Name"><![CDATA[FriendlyAccessorVisibility]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="EnumType">
+              <REFOBJ>
+                <ID name="FriendlyAccessorVisibility" mc="Standard.Enumeration" uid="549b8bda-70e6-461c-abca-d1e366967e03"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="FriendlyModifierVisibility" mc="Standard.ModuleParameter" uid="01ec25e8-0000-0748-0000-000000000000"/>
+          <ATTRIBUTES>
+            <ATT name="GroupName"></ATT>
+            <ATT name="Type">TYPE_PARAM_ENUM</ATT>
+            <ATT name="IsUserRead">true</ATT>
+            <ATT name="IsUserWrite">true</ATT>
+            <ATT name="IsApiRead">true</ATT>
+            <ATT name="IsApiWrite">true</ATT>
+            <ATT name="DefaultValue"></ATT>
+            <ATT name="Name"><![CDATA[FriendlyModifierVisibility]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="EnumType">
+              <REFOBJ>
+                <ID name="FriendlyModifierVisibility" mc="Standard.Enumeration" uid="5e533fe8-f69c-4fc5-94a7-38f2a0d4b8fd"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="PrivateAccessorVisibility" mc="Standard.ModuleParameter" uid="01ec25e8-0000-074e-0000-000000000000"/>
+          <ATTRIBUTES>
+            <ATT name="GroupName"></ATT>
+            <ATT name="Type">TYPE_PARAM_ENUM</ATT>
+            <ATT name="IsUserRead">true</ATT>
+            <ATT name="IsUserWrite">true</ATT>
+            <ATT name="IsApiRead">true</ATT>
+            <ATT name="IsApiWrite">true</ATT>
+            <ATT name="DefaultValue"></ATT>
+            <ATT name="Name"><![CDATA[PrivateAccessorVisibility]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="EnumType">
+              <REFOBJ>
+                <ID name="PrivateAccessorVisibility" mc="Standard.Enumeration" uid="b469895d-cbc1-461d-9829-1cfcc59d8848"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="PrivateModifierVisibility" mc="Standard.ModuleParameter" uid="01ec25e8-0000-0754-0000-000000000000"/>
+          <ATTRIBUTES>
+            <ATT name="GroupName"></ATT>
+            <ATT name="Type">TYPE_PARAM_ENUM</ATT>
+            <ATT name="IsUserRead">true</ATT>
+            <ATT name="IsUserWrite">true</ATT>
+            <ATT name="IsApiRead">true</ATT>
+            <ATT name="IsApiWrite">true</ATT>
+            <ATT name="DefaultValue"></ATT>
+            <ATT name="Name"><![CDATA[PrivateModifierVisibility]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="EnumType">
+              <REFOBJ>
+                <ID name="PrivateModifierVisibility" mc="Standard.Enumeration" uid="3b7924f2-ca0f-4918-9d39-dc0b8e215e72"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="GeneratePrePostConditions" mc="Standard.ModuleParameter" uid="01ec25e8-0000-075a-0000-000000000000"/>
+          <ATTRIBUTES>
+            <ATT name="GroupName"></ATT>
+            <ATT name="Type">TYPE_PARAM_BOOLEAN</ATT>
+            <ATT name="IsUserRead">true</ATT>
+            <ATT name="IsUserWrite">true</ATT>
+            <ATT name="IsApiRead">true</ATT>
+            <ATT name="IsApiWrite">true</ATT>
+            <ATT name="DefaultValue"></ATT>
+            <ATT name="Name"><![CDATA[GeneratePrePostConditions]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="GenerateInvariants" mc="Standard.ModuleParameter" uid="01ec25e8-0000-0761-0000-000000000000"/>
+          <ATTRIBUTES>
+            <ATT name="GroupName"></ATT>
+            <ATT name="Type">TYPE_PARAM_BOOLEAN</ATT>
+            <ATT name="IsUserRead">true</ATT>
+            <ATT name="IsUserWrite">true</ATT>
+            <ATT name="IsApiRead">true</ATT>
+            <ATT name="IsApiWrite">true</ATT>
+            <ATT name="DefaultValue"></ATT>
+            <ATT name="Name"><![CDATA[GenerateInvariants]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="InvariantsName" mc="Standard.ModuleParameter" uid="01ec25e8-0000-0766-0000-000000000000"/>
+          <ATTRIBUTES>
+            <ATT name="GroupName"></ATT>
+            <ATT name="Type">TYPE_PARAM_STRING</ATT>
+            <ATT name="IsUserRead">true</ATT>
+            <ATT name="IsUserWrite">true</ATT>
+            <ATT name="IsApiRead">true</ATT>
+            <ATT name="IsApiWrite">true</ATT>
+            <ATT name="DefaultValue"></ATT>
+            <ATT name="Name"><![CDATA[InvariantsName]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="UseExternalEdition" mc="Standard.ModuleParameter" uid="01ec25e8-0000-076a-0000-000000000000"/>
+          <ATTRIBUTES>
+            <ATT name="GroupName"></ATT>
+            <ATT name="Type">TYPE_PARAM_BOOLEAN</ATT>
+            <ATT name="IsUserRead">true</ATT>
+            <ATT name="IsUserWrite">true</ATT>
+            <ATT name="IsApiRead">true</ATT>
+            <ATT name="IsApiWrite">true</ATT>
+            <ATT name="DefaultValue"></ATT>
+            <ATT name="Name"><![CDATA[UseExternalEdition]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="ExternalEditorCommandLine" mc="Standard.ModuleParameter" uid="01ec25e8-0000-076c-0000-000000000000"/>
+          <ATTRIBUTES>
+            <ATT name="GroupName"></ATT>
+            <ATT name="Type">TYPE_PARAM_FILE</ATT>
+            <ATT name="IsUserRead">true</ATT>
+            <ATT name="IsUserWrite">true</ATT>
+            <ATT name="IsApiRead">true</ATT>
+            <ATT name="IsApiWrite">true</ATT>
+            <ATT name="DefaultValue"></ATT>
+            <ATT name="Name"><![CDATA[ExternalEditorCommandLine]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="CompilationOptions" mc="Standard.ModuleParameter" uid="01ec25e8-0000-0772-0000-000000000000"/>
+          <ATTRIBUTES>
+            <ATT name="GroupName"></ATT>
+            <ATT name="Type">TYPE_PARAM_STRING</ATT>
+            <ATT name="IsUserRead">true</ATT>
+            <ATT name="IsUserWrite">true</ATT>
+            <ATT name="IsApiRead">true</ATT>
+            <ATT name="IsApiWrite">true</ATT>
+            <ATT name="DefaultValue"></ATT>
+            <ATT name="Name"><![CDATA[CompilationOptions]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="UseJavah" mc="Standard.ModuleParameter" uid="01ec25e8-0000-0774-0000-000000000000"/>
+          <ATTRIBUTES>
+            <ATT name="GroupName"></ATT>
+            <ATT name="Type">TYPE_PARAM_BOOLEAN</ATT>
+            <ATT name="IsUserRead">true</ATT>
+            <ATT name="IsUserWrite">true</ATT>
+            <ATT name="IsApiRead">true</ATT>
+            <ATT name="IsApiWrite">true</ATT>
+            <ATT name="DefaultValue"></ATT>
+            <ATT name="Name"><![CDATA[UseJavah]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="RunParameters" mc="Standard.ModuleParameter" uid="01ec25e8-0000-0776-0000-000000000000"/>
+          <ATTRIBUTES>
+            <ATT name="GroupName"></ATT>
+            <ATT name="Type">TYPE_PARAM_STRING</ATT>
+            <ATT name="IsUserRead">true</ATT>
+            <ATT name="IsUserWrite">true</ATT>
+            <ATT name="IsApiRead">true</ATT>
+            <ATT name="IsApiWrite">true</ATT>
+            <ATT name="DefaultValue"></ATT>
+            <ATT name="Name"><![CDATA[RunParameters]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="GenerateJavadoc" mc="Standard.ModuleParameter" uid="01ec25e8-0000-0778-0000-000000000000"/>
+          <ATTRIBUTES>
+            <ATT name="GroupName"></ATT>
+            <ATT name="Type">TYPE_PARAM_BOOLEAN</ATT>
+            <ATT name="IsUserRead">true</ATT>
+            <ATT name="IsUserWrite">true</ATT>
+            <ATT name="IsApiRead">true</ATT>
+            <ATT name="IsApiWrite">true</ATT>
+            <ATT name="DefaultValue"></ATT>
+            <ATT name="Name"><![CDATA[GenerateJavadoc]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="DescriptionAsJavadoc" mc="Standard.ModuleParameter" uid="01ec25e8-0000-077a-0000-000000000000"/>
+          <ATTRIBUTES>
+            <ATT name="GroupName"></ATT>
+            <ATT name="Type">TYPE_PARAM_BOOLEAN</ATT>
+            <ATT name="IsUserRead">true</ATT>
+            <ATT name="IsUserWrite">true</ATT>
+            <ATT name="IsApiRead">true</ATT>
+            <ATT name="IsApiWrite">true</ATT>
+            <ATT name="DefaultValue"></ATT>
+            <ATT name="Name"><![CDATA[DescriptionAsJavadoc]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="JavaDocOptions" mc="Standard.ModuleParameter" uid="01ec25e8-0000-077c-0000-000000000000"/>
+          <ATTRIBUTES>
+            <ATT name="GroupName"></ATT>
+            <ATT name="Type">TYPE_PARAM_STRING</ATT>
+            <ATT name="IsUserRead">true</ATT>
+            <ATT name="IsUserWrite">true</ATT>
+            <ATT name="IsApiRead">true</ATT>
+            <ATT name="IsApiWrite">true</ATT>
+            <ATT name="DefaultValue"></ATT>
+            <ATT name="Name"><![CDATA[JavaDocOptions]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="AutomaticallyOpenJavadoc" mc="Standard.ModuleParameter" uid="01ec2a7c-0000-01e0-0000-000000000000"/>
+          <ATTRIBUTES>
+            <ATT name="GroupName"></ATT>
+            <ATT name="Type">TYPE_PARAM_BOOLEAN</ATT>
+            <ATT name="IsUserRead">true</ATT>
+            <ATT name="IsUserWrite">true</ATT>
+            <ATT name="IsApiRead">true</ATT>
+            <ATT name="IsApiWrite">true</ATT>
+            <ATT name="DefaultValue"></ATT>
+            <ATT name="Name"><![CDATA[AutomaticallyOpenJavadoc]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="GenerateJavadocMarkers" mc="Standard.ModuleParameter" uid="c60eb8f5-c78b-11e2-9d6e-02004c4f4f50"/>
+          <ATTRIBUTES>
+            <ATT name="GroupName"></ATT>
+            <ATT name="Type">TYPE_PARAM_BOOLEAN</ATT>
+            <ATT name="IsUserRead">true</ATT>
+            <ATT name="IsUserWrite">true</ATT>
+            <ATT name="IsApiRead">true</ATT>
+            <ATT name="IsApiWrite">true</ATT>
+            <ATT name="DefaultValue"></ATT>
+            <ATT name="Name"><![CDATA[GenerateJavadocMarkers]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="PackageSrcInRamc" mc="Standard.ModuleParameter" uid="01ec25e8-0000-077e-0000-000000000000"/>
+          <ATTRIBUTES>
+            <ATT name="GroupName"></ATT>
+            <ATT name="Type">TYPE_PARAM_BOOLEAN</ATT>
+            <ATT name="IsUserRead">true</ATT>
+            <ATT name="IsUserWrite">true</ATT>
+            <ATT name="IsApiRead">true</ATT>
+            <ATT name="IsApiWrite">true</ATT>
+            <ATT name="DefaultValue"></ATT>
+            <ATT name="Name"><![CDATA[PackageSrcInRamc]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="PackageJarInRamc" mc="Standard.ModuleParameter" uid="01ec25e8-0000-0780-0000-000000000000"/>
+          <ATTRIBUTES>
+            <ATT name="GroupName"></ATT>
+            <ATT name="Type">TYPE_PARAM_BOOLEAN</ATT>
+            <ATT name="IsUserRead">true</ATT>
+            <ATT name="IsUserWrite">true</ATT>
+            <ATT name="IsApiRead">true</ATT>
+            <ATT name="IsApiWrite">true</ATT>
+            <ATT name="DefaultValue"></ATT>
+            <ATT name="Name"><![CDATA[PackageJarInRamc]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <COMP relation="OwnedElement">
+        <OBJECT>
+          <ID name="GenerationMode" mc="Standard.Enumeration" uid="4fbaa49d-252f-4991-894c-0a6c656b4e08"/>
+          <ATTRIBUTES>
+            <ATT name="IsElementary">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="IsLeaf">false</ATT>
+            <ATT name="IsRoot">false</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="Name"><![CDATA[GenerationMode]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Value">
+              <OBJECT>
+                <ID name="RoundTrip" mc="Standard.EnumerationLiteral" uid="beb927b2-f562-4e44-b4a3-7a947f0ca12a"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[RoundTrip]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="ModelDriven" mc="Standard.EnumerationLiteral" uid="60cd968f-97e1-44c9-9bea-d3fcce920c6b"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[ModelDriven]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="Release" mc="Standard.EnumerationLiteral" uid="4cbf23f9-d8d5-4f70-b571-33b814df9862"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[Release]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="RetrieveDefaultBehaviour" mc="Standard.Enumeration" uid="d5c44874-0b49-4811-9e7a-c426acecec9d"/>
+          <ATTRIBUTES>
+            <ATT name="IsElementary">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="IsLeaf">false</ATT>
+            <ATT name="IsRoot">false</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="Name"><![CDATA[RetrieveDefaultBehaviour]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Value">
+              <OBJECT>
+                <ID name="Ask" mc="Standard.EnumerationLiteral" uid="2cb656bd-f02f-4ddd-93b4-222d0a12f2fa"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[Ask]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="Retrieve" mc="Standard.EnumerationLiteral" uid="a8a83564-c980-4999-adf9-a5b45e432a87"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[Retrieve]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="Keep" mc="Standard.EnumerationLiteral" uid="8fdde5b9-0ffe-4d51-8048-8ffb02bbbf98"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[Keep]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="Encoding" mc="Standard.Enumeration" uid="bce9de1e-c8a1-49ec-9cd4-67cedf67876c"/>
+          <ATTRIBUTES>
+            <ATT name="IsElementary">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="IsLeaf">false</ATT>
+            <ATT name="IsRoot">false</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="Name"><![CDATA[Encoding]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Value">
+              <OBJECT>
+                <ID name="ISO-8859-1" mc="Standard.EnumerationLiteral" uid="6aa99cda-3f53-4a5a-bb7d-662e49854171"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[ISO-8859-1]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="US-ASCII" mc="Standard.EnumerationLiteral" uid="8902c1b5-0055-4e67-a0e8-21800cb88c31"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[US-ASCII]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="UTF-8" mc="Standard.EnumerationLiteral" uid="554f0c09-8104-40ca-b066-3f9ad23d0980"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[UTF-8]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="UTF-16BE" mc="Standard.EnumerationLiteral" uid="94165f77-b770-4cc4-981a-7ad3319ac02a"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[UTF-16BE]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="UTF-16LE" mc="Standard.EnumerationLiteral" uid="68663f90-88f2-48f0-a015-be6576b6cadb"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[UTF-16LE]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="UTF-16" mc="Standard.EnumerationLiteral" uid="4e2cb7e4-a6f2-4f6e-8a1c-0f6e32983366"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[UTF-16]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="JavaCompatibility" mc="Standard.Enumeration" uid="0f9d2006-6793-40ca-93ab-7ab882396004"/>
+          <ATTRIBUTES>
+            <ATT name="IsElementary">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="IsLeaf">false</ATT>
+            <ATT name="IsRoot">false</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="Name"><![CDATA[JavaCompatibility]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Value">
+              <OBJECT>
+                <ID name="Java7" mc="Standard.EnumerationLiteral" uid="63a11794-f52d-4add-a5d4-402cd933c3e9"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[Java7]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="Java8" mc="Standard.EnumerationLiteral" uid="aa4c217b-9443-4c68-b6c4-c493f9c20d9b"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[Java8]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="InterfaceImplementation" mc="Standard.Enumeration" uid="ca97a520-8351-4559-93a7-a8588ddaced7"/>
+          <ATTRIBUTES>
+            <ATT name="IsElementary">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="IsLeaf">false</ATT>
+            <ATT name="IsRoot">false</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="Name"><![CDATA[InterfaceImplementation]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Value">
+              <OBJECT>
+                <ID name="Ask" mc="Standard.EnumerationLiteral" uid="7a069148-36bf-488b-be78-c59e785bd9a9"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[Ask]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="Always" mc="Standard.EnumerationLiteral" uid="f35c8838-0aaf-453e-866b-2c7e47064732"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[Always]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="Never" mc="Standard.EnumerationLiteral" uid="18ff76e1-3d22-4650-b86b-3cd4a1277414"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[Never]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="AccessorsGeneration" mc="Standard.Enumeration" uid="d1a84ecd-60ab-4aa7-9754-0f9da56df34e"/>
+          <ATTRIBUTES>
+            <ATT name="IsElementary">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="IsLeaf">false</ATT>
+            <ATT name="IsRoot">false</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="Name"><![CDATA[AccessorsGeneration]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Value">
+              <OBJECT>
+                <ID name="Always" mc="Standard.EnumerationLiteral" uid="24d0c4ea-2a3e-41e1-880f-b45db7edf3a5"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[Always]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="Smart" mc="Standard.EnumerationLiteral" uid="38bae55f-ed60-4518-9f33-437c3cea8129"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[Smart]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="Never" mc="Standard.EnumerationLiteral" uid="f4647ec2-64c0-461c-8b86-ce16392c8eb6"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[Never]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="PublicAccessorVisibility" mc="Standard.Enumeration" uid="0e077c2f-513a-4e40-be5a-3f822a07421d"/>
+          <ATTRIBUTES>
+            <ATT name="IsElementary">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="IsLeaf">false</ATT>
+            <ATT name="IsRoot">false</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="Name"><![CDATA[PublicAccessorVisibility]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Value">
+              <OBJECT>
+                <ID name="Public" mc="Standard.EnumerationLiteral" uid="0139c503-43be-4143-96f0-688ed7a047a0"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[Public]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="Protected" mc="Standard.EnumerationLiteral" uid="54ff9682-f5aa-4064-a968-308b12488d6d"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[Protected]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="Friendly" mc="Standard.EnumerationLiteral" uid="b0c4e7f4-2d4d-4798-8b40-b64f20867875"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[Friendly]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="Private" mc="Standard.EnumerationLiteral" uid="a9df7065-7af9-430c-9d24-952e79e1ad20"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[Private]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="PublicModifierVisibility" mc="Standard.Enumeration" uid="a3dd6f72-2c1b-44d9-a7ff-e0eb701dc307"/>
+          <ATTRIBUTES>
+            <ATT name="IsElementary">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="IsLeaf">false</ATT>
+            <ATT name="IsRoot">false</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="Name"><![CDATA[PublicModifierVisibility]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Value">
+              <OBJECT>
+                <ID name="Public" mc="Standard.EnumerationLiteral" uid="40ce6a2d-8d71-445d-ad39-f3fd1986cab1"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[Public]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="Protected" mc="Standard.EnumerationLiteral" uid="0904c32f-8d02-4f4b-b0d4-77db5e446469"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[Protected]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="Friendly" mc="Standard.EnumerationLiteral" uid="5e7eda7a-6e54-4562-9665-87d775a5e882"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[Friendly]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="Private" mc="Standard.EnumerationLiteral" uid="a10f2fd3-1ff6-44ae-adeb-dc253d329d17"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[Private]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="ProtectedAccessorVisibility" mc="Standard.Enumeration" uid="e1a085ca-6a0e-4fad-b2b4-a96987f4ffb9"/>
+          <ATTRIBUTES>
+            <ATT name="IsElementary">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="IsLeaf">false</ATT>
+            <ATT name="IsRoot">false</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="Name"><![CDATA[ProtectedAccessorVisibility]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Value">
+              <OBJECT>
+                <ID name="Public" mc="Standard.EnumerationLiteral" uid="dceb6843-4335-4192-bec2-881f2f43fc11"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[Public]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="Protected" mc="Standard.EnumerationLiteral" uid="77f1ccc1-1382-40a8-97e0-969c26340a56"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[Protected]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="Friendly" mc="Standard.EnumerationLiteral" uid="02aaf2e6-ca19-411e-b8d2-43cb6f92a652"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[Friendly]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="Private" mc="Standard.EnumerationLiteral" uid="ebac1112-0c1b-46ca-bd76-25c061682a0c"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[Private]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="ProtectedModifierVisibility" mc="Standard.Enumeration" uid="32a5633f-31a6-4583-bc01-5b5a6c691f57"/>
+          <ATTRIBUTES>
+            <ATT name="IsElementary">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="IsLeaf">false</ATT>
+            <ATT name="IsRoot">false</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="Name"><![CDATA[ProtectedModifierVisibility]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Value">
+              <OBJECT>
+                <ID name="Public" mc="Standard.EnumerationLiteral" uid="5380c6f0-0fca-4e58-883b-0929be679af9"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[Public]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="Protected" mc="Standard.EnumerationLiteral" uid="10db38b8-7b3e-4779-a69c-e7e8685e1936"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[Protected]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="Friendly" mc="Standard.EnumerationLiteral" uid="c65cab12-dde5-4b56-8a4a-20735b263f12"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[Friendly]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="Private" mc="Standard.EnumerationLiteral" uid="d254ff40-0476-439d-a0a9-265a2eccd749"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[Private]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="FriendlyAccessorVisibility" mc="Standard.Enumeration" uid="549b8bda-70e6-461c-abca-d1e366967e03"/>
+          <ATTRIBUTES>
+            <ATT name="IsElementary">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="IsLeaf">false</ATT>
+            <ATT name="IsRoot">false</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="Name"><![CDATA[FriendlyAccessorVisibility]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Value">
+              <OBJECT>
+                <ID name="Public" mc="Standard.EnumerationLiteral" uid="48f1e5af-f948-4049-9aa8-2f79c40169a1"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[Public]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="Protected" mc="Standard.EnumerationLiteral" uid="4a228200-acff-4522-b5bf-6e1368ae6473"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[Protected]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="Friendly" mc="Standard.EnumerationLiteral" uid="a959c138-ee84-4d70-a71d-da4295085561"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[Friendly]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="Private" mc="Standard.EnumerationLiteral" uid="fb28fe51-d26c-416d-a61c-dba14b039e0a"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[Private]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="FriendlyModifierVisibility" mc="Standard.Enumeration" uid="5e533fe8-f69c-4fc5-94a7-38f2a0d4b8fd"/>
+          <ATTRIBUTES>
+            <ATT name="IsElementary">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="IsLeaf">false</ATT>
+            <ATT name="IsRoot">false</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="Name"><![CDATA[FriendlyModifierVisibility]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Value">
+              <OBJECT>
+                <ID name="Public" mc="Standard.EnumerationLiteral" uid="b243299c-a059-46aa-b2a5-a6a6bd00ad19"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[Public]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="Protected" mc="Standard.EnumerationLiteral" uid="dc41204d-9798-4290-a9dc-5c226713cec6"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[Protected]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="Friendly" mc="Standard.EnumerationLiteral" uid="3161137a-828f-4aa3-ae62-dc8e10285831"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[Friendly]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="Private" mc="Standard.EnumerationLiteral" uid="7e72c855-0974-4b53-aa85-4643023bd89d"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[Private]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="PrivateAccessorVisibility" mc="Standard.Enumeration" uid="b469895d-cbc1-461d-9829-1cfcc59d8848"/>
+          <ATTRIBUTES>
+            <ATT name="IsElementary">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="IsLeaf">false</ATT>
+            <ATT name="IsRoot">false</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="Name"><![CDATA[PrivateAccessorVisibility]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Value">
+              <OBJECT>
+                <ID name="Public" mc="Standard.EnumerationLiteral" uid="a94d8e27-eeec-4037-8163-1f54482ddfd7"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[Public]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="Protected" mc="Standard.EnumerationLiteral" uid="0a7cb698-9aa9-479f-83a9-5e22a5d46be0"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[Protected]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="Friendly" mc="Standard.EnumerationLiteral" uid="af8f6c74-2c9a-4457-8150-30ba99311e0a"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[Friendly]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="Private" mc="Standard.EnumerationLiteral" uid="239f75ea-5da9-4894-bd6f-5742b59a2dd2"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[Private]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="PrivateModifierVisibility" mc="Standard.Enumeration" uid="3b7924f2-ca0f-4918-9d39-dc0b8e215e72"/>
+          <ATTRIBUTES>
+            <ATT name="IsElementary">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="IsLeaf">false</ATT>
+            <ATT name="IsRoot">false</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="Name"><![CDATA[PrivateModifierVisibility]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Value">
+              <OBJECT>
+                <ID name="Public" mc="Standard.EnumerationLiteral" uid="46f94997-bde1-4e29-8f8e-ee547a28607a"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[Public]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="Protected" mc="Standard.EnumerationLiteral" uid="b08bcdc9-26c8-4430-b083-5a9e6cc23747"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[Protected]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="Friendly" mc="Standard.EnumerationLiteral" uid="2767bcea-7f58-4315-91bb-b4089335eb52"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[Friendly]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="Private" mc="Standard.EnumerationLiteral" uid="b4fb7bf2-a305-4857-9b0a-6f2678cc639e"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[Private]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>
