@@ -15,6 +15,7 @@
     <DEPENDENCIES>
       <COMP relation="OwnedElement">
         <COMPID name="activityDiagram" mc="Standard.Package" uid="024ea20b-82c9-46e5-80dd-cde84b8fe52b"/>
+        <COMPID name="UseCaseDiagram" mc="Standard.Package" uid="a30322aa-b964-42d2-9eeb-7be78e6244e2"/>
       </COMP>
       <COMP relation="Product">
         <COMPID name="overview diagram" mc="Standard.ClassDiagram" uid="6661adef-2d87-430f-a89e-95181ae78983"/>

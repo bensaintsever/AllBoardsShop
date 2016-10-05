@@ -1,0 +1,43 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="UseCaseDiagram" version="4">
+  <OBJECT>
+    <ID name="UseCaseDiagram" mc="Standard.Package" uid="a30322aa-b964-42d2-9eeb-7be78e6244e2"/>
+    <PID name="allboardsshop" mc="Standard.Package" uid="73681790-049f-42ae-b84e-b16b9683c23b"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[UseCaseDiagram]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedElement">
+        <COMPID name="Client" mc="Standard.Actor" uid="00481336-2b36-44a4-9b31-661d90c195be"/>
+        <COMPID name="Client privilégié" mc="Standard.Actor" uid="f4247477-1c0e-4e59-a915-72f0edeb88a4"/>
+        <COMPID name="S'inscrire" mc="Standard.UseCase" uid="a6f4e42d-8e65-4503-ad80-e47c14d9dbbd"/>
+        <COMPID name="Modifier Informations Personnelles" mc="Standard.UseCase" uid="d73d853f-4e45-41e7-ac43-480263fb50e6"/>
+        <COMPID name="Prendre Connaissance des Produits" mc="Standard.UseCase" uid="2de6448f-b01c-41a1-a291-2c4305b18356"/>
+        <COMPID name="Constituer choix Produit" mc="Standard.UseCase" uid="70295b29-aab3-4ce1-878b-61f13c1c21aa"/>
+        <COMPID name="Fournir Informations Activités" mc="Standard.UseCase" uid="14bb6038-9921-49ef-9903-9a06089f6d4e"/>
+        <COMPID name="Fournir Informations Peronnelles" mc="Standard.UseCase" uid="5414b1c9-703d-4280-ac11-7ae4b17bd36c"/>
+        <COMPID name="Gerant magasin" mc="Standard.Actor" uid="94018b0d-22ea-4bfb-a920-ecff584e30a0"/>
+        <COMPID name="Selectionner Clients Privilegie" mc="Standard.UseCase" uid="52fe3e83-c36e-4982-92d1-80d405e0a8d0"/>
+        <COMPID name="Valider Inscription Client" mc="Standard.UseCase" uid="8d6ea0af-4fca-42b7-bbaf-5bf089b58b52"/>
+        <COMPID name="Fournisseur" mc="Standard.Actor" uid="f8eecd69-af09-44f7-8f85-6ed2e77c2b89"/>
+        <COMPID name="Proposer une vente" mc="Standard.UseCase" uid="1c3dd14b-5c9b-4391-b1d3-fe58e1b7baa1"/>
+        <COMPID name="Recuperer commandes" mc="Standard.UseCase" uid="99fa394d-9551-4f3e-9bde-e68fb82fe263"/>
+        <COMPID name="Fournir description" mc="Standard.UseCase" uid="321b6402-f7a0-4a78-9c54-7a62ae4c7718"/>
+        <COMPID name="Notifier Client" mc="Standard.UseCase" uid="73860366-dcbd-4f5c-8f6d-e53ea4173db4"/>
+        <COMPID name="Modifier Informations" mc="Standard.UseCase" uid="8d46ede6-5e55-4b86-ab76-2277aa42c392"/>
+        <COMPID name="Livrer Magasin" mc="Standard.UseCase" uid="7f033b47-f503-4c9d-af5e-3833d6446576"/>
+        <COMPID name="Finaliser la commande" mc="Standard.UseCase" uid="147387d1-bb29-4420-8702-d63bdbdc2e1f"/>
+        <COMPID name="Payer la commande" mc="Standard.UseCase" uid="0f3bb53e-04c3-4485-8f73-48ae30e7b9bf"/>
+      </COMP>
+      <COMP relation="Product">
+        <COMPID name="allboardsshop Use Case diagram" mc="Standard.UseCaseDiagram" uid="29f84c1d-638f-46af-86cc-65bde3c2ce30"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>
