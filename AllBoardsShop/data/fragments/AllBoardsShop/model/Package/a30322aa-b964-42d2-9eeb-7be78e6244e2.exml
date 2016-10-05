@@ -34,6 +34,7 @@
         <COMPID name="Livrer Magasin" mc="Standard.UseCase" uid="7f033b47-f503-4c9d-af5e-3833d6446576"/>
         <COMPID name="Finaliser la commande" mc="Standard.UseCase" uid="147387d1-bb29-4420-8702-d63bdbdc2e1f"/>
         <COMPID name="Payer la commande" mc="Standard.UseCase" uid="0f3bb53e-04c3-4485-8f73-48ae30e7b9bf"/>
+        <COMPID name="Paypal" mc="Standard.Actor" uid="d1483ffd-e144-4283-a402-37ce5404caa4"/>
       </COMP>
       <COMP relation="Product">
         <COMPID name="allboardsshop Use Case diagram" mc="Standard.UseCaseDiagram" uid="29f84c1d-638f-46af-86cc-65bde3c2ce30"/>
