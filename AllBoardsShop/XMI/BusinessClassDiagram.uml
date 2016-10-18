@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_zEsQEJWBEeahhpoZjYzYsg" name="allboardsshop">
+  <eAnnotations xmi:id="_zEsQEZWBEeahhpoZjYzYsg" source="Objing">
+    <contents xmi:type="uml:Property" xmi:id="_zEsQEpWBEeahhpoZjYzYsg" name="exporterVersion">
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="_zEsQE5WBEeahhpoZjYzYsg" value="3.0.0"/>
+    </contents>
+  </eAnnotations>
+  <packagedElement xmi:type="uml:Enumeration" xmi:id="_zEsQFJWBEeahhpoZjYzYsg" name="Activite">
+    <ownedAttribute xmi:id="_zEsQFZWBEeahhpoZjYzYsg" name="SKI" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_zEsQFpWBEeahhpoZjYzYsg" name="SKATE" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_zEsQF5WBEeahhpoZjYzYsg" name="SNOWBOARD" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_zEsQGJWBEeahhpoZjYzYsg" name="SURF" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_zEsQGZWBEeahhpoZjYzYsg" name="WAKEBOARD" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_zEsQGpWBEeahhpoZjYzYsg" name="FUNBOARD" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Enumeration" xmi:id="_zEsQG5WBEeahhpoZjYzYsg" name="Materiel">
+    <ownedAttribute xmi:id="_zEsQHJWBEeahhpoZjYzYsg" name="HARDGOOD" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_zEsQHZWBEeahhpoZjYzYsg" name="SOFTGOOD" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Enumeration" xmi:id="_zEsQHpWBEeahhpoZjYzYsg" name="Taille">
+    <ownedAttribute xmi:id="_zEsQH5WBEeahhpoZjYzYsg" name="XS" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_zEsQIJWBEeahhpoZjYzYsg" name="S" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_zEsQIZWBEeahhpoZjYzYsg" name="M" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_zEsQIpWBEeahhpoZjYzYsg" name="L" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_zEsQI5WBEeahhpoZjYzYsg" name="XL" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_zEsQJJWBEeahhpoZjYzYsg" name="XXL" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_zEsQJZWBEeahhpoZjYzYsg" name="Date"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_zEsQJpWBEeahhpoZjYzYsg" name="ClientPrivilegie"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_zEsQJ5WBEeahhpoZjYzYsg" name="Magasin">
+    <ownedAttribute xmi:id="_zEsQKJWBEeahhpoZjYzYsg" name="fournisseur" visibility="public" type="_zEsQNJWBEeahhpoZjYzYsg" association="_zEsQLpWBEeahhpoZjYzYsg">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zEsQKZWBEeahhpoZjYzYsg"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_zEsQKpWBEeahhpoZjYzYsg" name="clientPrivilegie" visibility="public" type="_zEsQJpWBEeahhpoZjYzYsg" association="_zEsQMZWBEeahhpoZjYzYsg">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zEsQK5WBEeahhpoZjYzYsg"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_zEsQLJWBEeahhpoZjYzYsg" name="clients" visibility="public" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_zEsQLZWBEeahhpoZjYzYsg" name="fournisseurs" visibility="public" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_zEsQLpWBEeahhpoZjYzYsg" memberEnd="_zEsQKJWBEeahhpoZjYzYsg _zEsQL5WBEeahhpoZjYzYsg">
+    <ownedEnd xmi:id="_zEsQL5WBEeahhpoZjYzYsg" visibility="public" type="_zEsQJ5WBEeahhpoZjYzYsg" association="_zEsQLpWBEeahhpoZjYzYsg">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zEsQMJWBEeahhpoZjYzYsg"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_zEsQMZWBEeahhpoZjYzYsg" memberEnd="_zEsQKpWBEeahhpoZjYzYsg _zEsQMpWBEeahhpoZjYzYsg">
+    <ownedEnd xmi:id="_zEsQMpWBEeahhpoZjYzYsg" visibility="public" type="_zEsQJ5WBEeahhpoZjYzYsg" association="_zEsQMZWBEeahhpoZjYzYsg">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zEsQM5WBEeahhpoZjYzYsg"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_zEsQNJWBEeahhpoZjYzYsg" name="Fournisseur">
+    <ownedAttribute xmi:id="_zEsQNZWBEeahhpoZjYzYsg" name="vente" visibility="public" type="_zEsQRZWBEeahhpoZjYzYsg" association="_zEsQP5WBEeahhpoZjYzYsg">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zEsQNpWBEeahhpoZjYzYsg"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_zEsQN5WBEeahhpoZjYzYsg" name="article" visibility="public" type="_zEsQU5WBEeahhpoZjYzYsg" association="_zEsQQpWBEeahhpoZjYzYsg">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zEsQOJWBEeahhpoZjYzYsg"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_zEsQOZWBEeahhpoZjYzYsg" name="articles" visibility="public" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_zEsQOpWBEeahhpoZjYzYsg" name="nom" visibility="public" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_zEsQO5WBEeahhpoZjYzYsg" name="adresse" visibility="public" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_zEsQPJWBEeahhpoZjYzYsg" name="mail" visibility="public" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_zEsQPZWBEeahhpoZjYzYsg" name="typeMateriel" visibility="public" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_zEsQPpWBEeahhpoZjYzYsg" name="ventes" visibility="public" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_zEsQP5WBEeahhpoZjYzYsg" memberEnd="_zEsQNZWBEeahhpoZjYzYsg _zEsQQJWBEeahhpoZjYzYsg">
+    <ownedEnd xmi:id="_zEsQQJWBEeahhpoZjYzYsg" visibility="public" type="_zEsQNJWBEeahhpoZjYzYsg" association="_zEsQP5WBEeahhpoZjYzYsg">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zEsQQZWBEeahhpoZjYzYsg"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_zEsQQpWBEeahhpoZjYzYsg" memberEnd="_zEsQN5WBEeahhpoZjYzYsg _zEsQQ5WBEeahhpoZjYzYsg">
+    <ownedEnd xmi:id="_zEsQQ5WBEeahhpoZjYzYsg" visibility="public" type="_zEsQNJWBEeahhpoZjYzYsg" association="_zEsQQpWBEeahhpoZjYzYsg">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zEsQRJWBEeahhpoZjYzYsg"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_zEsQRZWBEeahhpoZjYzYsg" name="Vente">
+    <ownedAttribute xmi:id="_zEsQRpWBEeahhpoZjYzYsg" name="nom" visibility="public" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_zEsQR5WBEeahhpoZjYzYsg" name="dateDebut" visibility="public" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_zEsQSJWBEeahhpoZjYzYsg" name="dateFin" visibility="public" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_zEsQSZWBEeahhpoZjYzYsg" name="activite" visibility="public" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_zEsQSpWBEeahhpoZjYzYsg" name="description" visibility="public" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_zEsQS5WBEeahhpoZjYzYsg" name="articles" visibility="public" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_zEsQTJWBEeahhpoZjYzYsg" name="Client">
+    <ownedAttribute xmi:id="_zEsQTZWBEeahhpoZjYzYsg" name="nom" visibility="public" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_zEsQTpWBEeahhpoZjYzYsg" name="prenom" visibility="public" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_zEsQT5WBEeahhpoZjYzYsg" name="adresse" visibility="public" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_zEsQUJWBEeahhpoZjYzYsg" name="mail" visibility="public" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_zEsQUZWBEeahhpoZjYzYsg" name="telephone" visibility="public" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_zEsQUpWBEeahhpoZjYzYsg" name="activite" visibility="public" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_zEsQU5WBEeahhpoZjYzYsg" name="Article">
+    <ownedAttribute xmi:id="_zEsQVJWBEeahhpoZjYzYsg" name="prixBase" visibility="public" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_zEsQVZWBEeahhpoZjYzYsg" name="prixVente" visibility="public" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_zEsQVpWBEeahhpoZjYzYsg" name="nom" visibility="public" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_zEsQV5WBEeahhpoZjYzYsg" name="description" visibility="public" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_zEsQWJWBEeahhpoZjYzYsg" name="photo" visibility="public" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_zEsQWZWBEeahhpoZjYzYsg" name="tailleParQuantite" visibility="public" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+  </packagedElement>
+</uml:Model>
