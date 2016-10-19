@@ -1,0 +1,27 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="ClassesParticipanteDiagram" version="4">
+  <OBJECT>
+    <ID name="ClassesParticipanteDiagram" mc="Standard.Package" uid="8013d8c9-8f6f-40db-9378-81e161bebbd7"/>
+    <PID name="allboardsshop" mc="Standard.Package" uid="73681790-049f-42ae-b84e-b16b9683c23b"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[ClassesParticipanteDiagram]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedElement">
+        <COMPID name="BoundaryProposerVente" mc="Standard.Class" uid="90918313-e849-456b-a8d3-dc6b411ac0d8"/>
+        <COMPID name="ControlProposerVente" mc="Standard.Class" uid="222d17f3-b8c0-4e7f-8471-23564d317947"/>
+        <COMPID name="Activite" mc="Standard.DataType" uid="bd95db06-c64a-412f-9ed4-970ea13af445"/>
+        <COMPID name="Photo" mc="Standard.DataType" uid="90397063-fba2-4acd-b6c3-5a3d5135a27c"/>
+      </COMP>
+      <COMP relation="Product">
+        <COMPID name="Diagramme de classe Participante" mc="Standard.ClassDiagram" uid="9b70ce89-fa91-4e0b-bbee-dd2a839436ec"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

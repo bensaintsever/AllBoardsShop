@@ -13,6 +13,12 @@
       <ATT name="Name"><![CDATA[LocalProfile]]></ATT>
       <ATT name="status">1970354901745664</ATT>
     </ATTRIBUTES>
-    <DEPENDENCIES></DEPENDENCIES>
+    <DEPENDENCIES>
+      <COMP relation="DefinedStereotype">
+        <COMPID name="Boundary" mc="Standard.Stereotype" uid="434f54e2-2cf4-426e-955c-49424c6204c3"/>
+        <COMPID name="boundary" mc="Standard.Stereotype" uid="96a1b934-00f1-4ccf-8084-39bb329fd39d"/>
+        <COMPID name="boundary" mc="Standard.Stereotype" uid="a393dc94-9156-467b-83fe-d29a43b01bee"/>
+      </COMP>
+    </DEPENDENCIES>
   </OBJECT>
 </EXT>

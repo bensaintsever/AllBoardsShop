@@ -311,7 +311,7 @@
                     <OBJECT>
                       <ID name="" mc="Standard.Note" uid="893aae50-21fb-4edc-b4cd-0c938f52c490"/>
                       <ATTRIBUTES>
-                        <ATT name="Content"><![CDATA[<Enter note text here>]]></ATT>
+                        <ATT name="Content"></ATT>
                         <ATT name="MimeType"></ATT>
                         <ATT name="Name"></ATT>
                         <ATT name="status">1970354901745664</ATT>
@@ -850,7 +850,7 @@
               <OBJECT>
                 <ID name="" mc="Standard.Message" uid="ed0613d7-f114-4c3b-a7ee-e7cc16fd63d8"/>
                 <ATTRIBUTES>
-                  <ATT name="Argument"><![CDATA[taillesEtQuantite]]></ATT>
+                  <ATT name="Argument"><![CDATA[quantitéParTaille]]></ATT>
                   <ATT name="KindOfMessage">CompleteKind</ATT>
                   <ATT name="SortOfMessage">SyncCall</ATT>
                   <ATT name="Name"></ATT>
@@ -1522,7 +1522,7 @@
                 <ID name="" mc="Standard.InteractionOperand" uid="ec4be361-d5d1-4719-b707-6cad1353b048"/>
                 <ATTRIBUTES>
                   <ATT name="Guard"><![CDATA[Pour n activités]]></ATT>
-                  <ATT name="EndLineNumber">585</ATT>
+                  <ATT name="EndLineNumber">581</ATT>
                   <ATT name="LineNumber">444</ATT>
                   <ATT name="Name"></ATT>
                   <ATT name="status">1970354901745664</ATT>
@@ -1659,71 +1659,6 @@
                 <ID name="r" mc="Standard.Lifeline" uid="63a7506b-c531-4344-a42b-523a1dd66bcf"/>
               </REFOBJ>
             </LINK>
-          </DEPENDENCIES>
-        </OBJECT>
-        <OBJECT>
-          <ID name="CombinedFragment" mc="Standard.CombinedFragment" uid="d673ab00-fa6b-4dcf-a690-ecc3dad4b6f5"/>
-          <ATTRIBUTES>
-            <ATT name="Operator">AltOp</ATT>
-            <ATT name="LineNumber">704</ATT>
-            <ATT name="Name"><![CDATA[CombinedFragment]]></ATT>
-            <ATT name="status">1970354901745664</ATT>
-          </ATTRIBUTES>
-          <DEPENDENCIES>
-            <COMP relation="Operand">
-              <OBJECT>
-                <ID name="InteractionOperand" mc="Standard.InteractionOperand" uid="06f57963-06af-4a28-8bd5-0ac5f4266cf5"/>
-                <ATTRIBUTES>
-                  <ATT name="Guard"><![CDATA[reponse == OUI]]></ATT>
-                  <ATT name="EndLineNumber">1284</ATT>
-                  <ATT name="LineNumber">704</ATT>
-                  <ATT name="Name"><![CDATA[InteractionOperand]]></ATT>
-                  <ATT name="status">1970354901745664</ATT>
-                </ATTRIBUTES>
-                <DEPENDENCIES>
-                  <COMP relation="Descriptor">
-                    <OBJECT>
-                      <ID name="" mc="Standard.Note" uid="dc268a92-9db4-44e6-9f70-5408aabcd693"/>
-                      <ATTRIBUTES>
-                        <ATT name="Content"></ATT>
-                        <ATT name="MimeType"></ATT>
-                        <ATT name="Name"></ATT>
-                        <ATT name="status">1970354901745664</ATT>
-                      </ATTRIBUTES>
-                      <DEPENDENCIES>
-                        <LINK relation="Model">
-                          <FOREIGNID name="description" mc="Standard.NoteType" uid="00000000-0000-3e81-0000-000000000000"/>
-                        </LINK>
-                      </DEPENDENCIES>
-                    </OBJECT>
-                  </COMP>
-                </DEPENDENCIES>
-              </OBJECT>
-            </COMP>
-            <LINK relation="Covered">
-              <REFOBJ>
-                <ID name="r1" mc="Standard.Lifeline" uid="3c022673-1e1c-450a-b5f6-c95171dc4f70"/>
-              </REFOBJ>
-              <REFOBJ>
-                <ID name="r" mc="Standard.Lifeline" uid="63a7506b-c531-4344-a42b-523a1dd66bcf"/>
-              </REFOBJ>
-            </LINK>
-            <COMP relation="Descriptor">
-              <OBJECT>
-                <ID name="" mc="Standard.Note" uid="0b965bfc-2062-4524-adea-6336b4655326"/>
-                <ATTRIBUTES>
-                  <ATT name="Content"></ATT>
-                  <ATT name="MimeType"></ATT>
-                  <ATT name="Name"></ATT>
-                  <ATT name="status">1970354901745664</ATT>
-                </ATTRIBUTES>
-                <DEPENDENCIES>
-                  <LINK relation="Model">
-                    <FOREIGNID name="description" mc="Standard.NoteType" uid="00000000-0000-3e81-0000-000000000000"/>
-                  </LINK>
-                </DEPENDENCIES>
-              </OBJECT>
-            </COMP>
           </DEPENDENCIES>
         </OBJECT>
         <OBJECT>
@@ -1864,7 +1799,6 @@
             </COMP>
           </DEPENDENCIES>
         </OBJECT>
-        <COMPID name="InteractionOperand" mc="Standard.InteractionOperand" uid="06f57963-06af-4a28-8bd5-0ac5f4266cf5"/>
         <OBJECT>
           <ID name="" mc="Standard.ExecutionOccurenceSpecification" uid="4108b127-a252-4287-8479-fecd4e8464b9"/>
           <ATTRIBUTES>
@@ -1948,25 +1882,6 @@
             <ATT name="status">1970354901745664</ATT>
           </ATTRIBUTES>
           <DEPENDENCIES>
-            <COMP relation="SentMessage">
-              <OBJECT>
-                <ID name="" mc="Standard.Message" uid="1f6c4197-52cd-49ca-9db0-8e4643fe4078"/>
-                <ATTRIBUTES>
-                  <ATT name="Argument"></ATT>
-                  <ATT name="KindOfMessage">CompleteKind</ATT>
-                  <ATT name="SortOfMessage">ReturnMessage</ATT>
-                  <ATT name="Name"></ATT>
-                  <ATT name="status">1970354901745664</ATT>
-                </ATTRIBUTES>
-                <DEPENDENCIES>
-                  <LINK relation="ReceiveEvent">
-                    <REFOBJ>
-                      <ID name="" mc="Standard.ExecutionOccurenceSpecification" uid="82c3ec73-5d5c-4bcf-83fd-5245cdee68f5"/>
-                    </REFOBJ>
-                  </LINK>
-                </DEPENDENCIES>
-              </OBJECT>
-            </COMP>
             <LINK relation="Covered">
               <REFOBJ>
                 <ID name="r1" mc="Standard.Lifeline" uid="3c022673-1e1c-450a-b5f6-c95171dc4f70"/>
@@ -1990,21 +1905,6 @@
             <LINK relation="Covered">
               <REFOBJ>
                 <ID name="r1" mc="Standard.Lifeline" uid="3c022673-1e1c-450a-b5f6-c95171dc4f70"/>
-              </REFOBJ>
-            </LINK>
-          </DEPENDENCIES>
-        </OBJECT>
-        <OBJECT>
-          <ID name="" mc="Standard.ExecutionOccurenceSpecification" uid="82c3ec73-5d5c-4bcf-83fd-5245cdee68f5"/>
-          <ATTRIBUTES>
-            <ATT name="LineNumber">1221</ATT>
-            <ATT name="Name"></ATT>
-            <ATT name="status">1970354901745664</ATT>
-          </ATTRIBUTES>
-          <DEPENDENCIES>
-            <LINK relation="Covered">
-              <REFOBJ>
-                <ID name="r" mc="Standard.Lifeline" uid="63a7506b-c531-4344-a42b-523a1dd66bcf"/>
               </REFOBJ>
             </LINK>
           </DEPENDENCIES>
@@ -2204,6 +2104,22 @@
       </COMP>
       <COMP relation="Product">
         <COMPID name="Sequence Proposer une vente" mc="Standard.SequenceDiagram" uid="59f01ae5-e5a1-4f3d-b5d4-af39ae642eef"/>
+      </COMP>
+      <COMP relation="Descriptor">
+        <OBJECT>
+          <ID name="" mc="Standard.Note" uid="963233e6-b75c-44d9-8243-6db3f87a68d7"/>
+          <ATTRIBUTES>
+            <ATT name="Content"></ATT>
+            <ATT name="MimeType"></ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Model">
+              <FOREIGNID name="description" mc="Standard.NoteType" uid="00000000-0000-3e81-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
       </COMP>
     </DEPENDENCIES>
   </OBJECT>

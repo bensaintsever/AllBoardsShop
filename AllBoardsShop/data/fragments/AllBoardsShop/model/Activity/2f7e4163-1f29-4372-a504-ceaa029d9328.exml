@@ -44,7 +44,7 @@
                       <DEPENDENCIES>
                         <LINK relation="Target">
                           <REFOBJ>
-                            <ID name="Decision-Merge" mc="Standard.DecisionMergeNode" uid="f103a077-80f6-4d2e-8aed-03f3a7ce6e03"/>
+                            <ID name="Validation ventes" mc="Standard.DecisionMergeNode" uid="f103a077-80f6-4d2e-8aed-03f3a7ce6e03"/>
                           </REFOBJ>
                         </LINK>
                       </DEPENDENCIES>
@@ -74,7 +74,7 @@
                       <DEPENDENCIES>
                         <LINK relation="Target">
                           <REFOBJ>
-                            <ID name="Decision-Merge1" mc="Standard.DecisionMergeNode" uid="b22e51f1-aaa8-407a-98f6-363b223fbb3a"/>
+                            <ID name="Le produit correspond aux recherches du client" mc="Standard.DecisionMergeNode" uid="b22e51f1-aaa8-407a-98f6-363b223fbb3a"/>
                           </REFOBJ>
                         </LINK>
                       </DEPENDENCIES>
@@ -83,31 +83,15 @@
                 </DEPENDENCIES>
               </OBJECT>
               <OBJECT>
-                <ID name="Decision-Merge" mc="Standard.DecisionMergeNode" uid="f103a077-80f6-4d2e-8aed-03f3a7ce6e03"/>
+                <ID name="Validation ventes" mc="Standard.DecisionMergeNode" uid="f103a077-80f6-4d2e-8aed-03f3a7ce6e03"/>
                 <ATTRIBUTES>
                   <ATT name="DecisionKind">ExclusiveDecision</ATT>
                   <ATT name="DecisionInputBehavior"></ATT>
-                  <ATT name="Name"><![CDATA[Decision-Merge]]></ATT>
+                  <ATT name="Name"><![CDATA[Validation ventes]]></ATT>
                   <ATT name="status">1970354901745664</ATT>
                 </ATTRIBUTES>
                 <DEPENDENCIES>
                   <COMP relation="Outgoing">
-                    <OBJECT>
-                      <ID name="ControlFlow" mc="Standard.ControlFlow" uid="c0d18f3b-16d7-46bb-9c4a-012c39cee5d7"/>
-                      <ATTRIBUTES>
-                        <ATT name="Guard"><![CDATA[OUI]]></ATT>
-                        <ATT name="Weight"><![CDATA[1]]></ATT>
-                        <ATT name="Name"><![CDATA[ControlFlow]]></ATT>
-                        <ATT name="status">1970354901745664</ATT>
-                      </ATTRIBUTES>
-                      <DEPENDENCIES>
-                        <LINK relation="Target">
-                          <REFOBJ>
-                            <ID name="Fork/Join" mc="Standard.ForkJoinNode" uid="1612c319-6cca-44b0-9881-1852dad9cd10"/>
-                          </REFOBJ>
-                        </LINK>
-                      </DEPENDENCIES>
-                    </OBJECT>
                     <OBJECT>
                       <ID name="ControlFlow" mc="Standard.ControlFlow" uid="044b122c-3bc9-4ecc-8809-c04286155bef"/>
                       <ATTRIBUTES>
@@ -124,6 +108,38 @@
                         </LINK>
                       </DEPENDENCIES>
                     </OBJECT>
+                    <OBJECT>
+                      <ID name="ControlFlow" mc="Standard.ControlFlow" uid="ce4c03ea-5ffd-40e1-9d88-bdcd7332919c"/>
+                      <ATTRIBUTES>
+                        <ATT name="Guard"><![CDATA[OUI]]></ATT>
+                        <ATT name="Weight"><![CDATA[1]]></ATT>
+                        <ATT name="Name"><![CDATA[ControlFlow]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Target">
+                          <REFOBJ>
+                            <ID name="Proposer articles" mc="Standard.OpaqueAction" uid="1c8d0328-e33c-49d8-aaff-279340f77bff"/>
+                          </REFOBJ>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                  <COMP relation="Descriptor">
+                    <OBJECT>
+                      <ID name="" mc="Standard.Note" uid="86fe2902-ff5d-4e85-85c5-4266bc519c83"/>
+                      <ATTRIBUTES>
+                        <ATT name="Content"></ATT>
+                        <ATT name="MimeType"></ATT>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Model">
+                          <FOREIGNID name="description" mc="Standard.NoteType" uid="00000000-0000-3e81-0000-000000000000"/>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
                   </COMP>
                 </DEPENDENCIES>
               </OBJECT>
@@ -136,11 +152,11 @@
                 <DEPENDENCIES></DEPENDENCIES>
               </OBJECT>
               <OBJECT>
-                <ID name="Decision-Merge1" mc="Standard.DecisionMergeNode" uid="b22e51f1-aaa8-407a-98f6-363b223fbb3a"/>
+                <ID name="Le produit correspond aux recherches du client" mc="Standard.DecisionMergeNode" uid="b22e51f1-aaa8-407a-98f6-363b223fbb3a"/>
                 <ATTRIBUTES>
                   <ATT name="DecisionKind">ExclusiveDecision</ATT>
                   <ATT name="DecisionInputBehavior"></ATT>
-                  <ATT name="Name"><![CDATA[Decision-Merge1]]></ATT>
+                  <ATT name="Name"><![CDATA[Le produit correspond aux recherches du client]]></ATT>
                   <ATT name="status">1970354901745664</ATT>
                 </ATTRIBUTES>
                 <DEPENDENCIES>
@@ -156,7 +172,7 @@
                       <DEPENDENCIES>
                         <LINK relation="Target">
                           <REFOBJ>
-                            <ID name="Envoie mail" mc="Standard.SendSignalAction" uid="f6bdc6af-cb8e-4c57-aba7-6f403bcb6dd6"/>
+                            <ID name="Envoie mail aux clients ciblés" mc="Standard.SendSignalAction" uid="f6bdc6af-cb8e-4c57-aba7-6f403bcb6dd6"/>
                           </REFOBJ>
                         </LINK>
                       </DEPENDENCIES>
@@ -178,14 +194,30 @@
                       </DEPENDENCIES>
                     </OBJECT>
                   </COMP>
+                  <COMP relation="Descriptor">
+                    <OBJECT>
+                      <ID name="" mc="Standard.Note" uid="785c108c-96c2-4f8a-9500-3c68fb23658f"/>
+                      <ATTRIBUTES>
+                        <ATT name="Content"></ATT>
+                        <ATT name="MimeType"></ATT>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Model">
+                          <FOREIGNID name="description" mc="Standard.NoteType" uid="00000000-0000-3e81-0000-000000000000"/>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
                 </DEPENDENCIES>
               </OBJECT>
               <OBJECT>
-                <ID name="Envoie mail" mc="Standard.SendSignalAction" uid="f6bdc6af-cb8e-4c57-aba7-6f403bcb6dd6"/>
+                <ID name="Envoie mail aux clients ciblés" mc="Standard.SendSignalAction" uid="f6bdc6af-cb8e-4c57-aba7-6f403bcb6dd6"/>
                 <ATTRIBUTES>
                   <ATT name="IsMultipleInstance">false</ATT>
                   <ATT name="IsCompensation">false</ATT>
-                  <ATT name="Name"><![CDATA[Envoie mail]]></ATT>
+                  <ATT name="Name"><![CDATA[Envoie mail aux clients ciblés]]></ATT>
                   <ATT name="status">1970354901745664</ATT>
                 </ATTRIBUTES>
                 <DEPENDENCIES>
@@ -229,7 +261,7 @@
                 <DEPENDENCIES>
                   <COMP relation="Outgoing">
                     <OBJECT>
-                      <ID name="ControlFlow" mc="Standard.ControlFlow" uid="05bec553-09bf-41a8-a830-4666bcc7b4fb"/>
+                      <ID name="ControlFlow" mc="Standard.ControlFlow" uid="44aa2e7d-5da2-44b7-bc28-cfdbd04c8d14"/>
                       <ATTRIBUTES>
                         <ATT name="Guard"></ATT>
                         <ATT name="Weight"><![CDATA[1]]></ATT>
@@ -239,7 +271,7 @@
                       <DEPENDENCIES>
                         <LINK relation="Target">
                           <REFOBJ>
-                            <ID name="Fork/Join" mc="Standard.ForkJoinNode" uid="8ac25c82-c0a9-4e78-b660-66957dfec0ac"/>
+                            <ID name="Attendre la date du début de la vente" mc="Standard.AcceptTimeEventAction" uid="8271b5d0-ec74-4d0c-8505-4aab7cb24e61"/>
                           </REFOBJ>
                         </LINK>
                       </DEPENDENCIES>
@@ -248,17 +280,18 @@
                 </DEPENDENCIES>
               </OBJECT>
               <OBJECT>
-                <ID name="Fork/Join" mc="Standard.ForkJoinNode" uid="8ac25c82-c0a9-4e78-b660-66957dfec0ac"/>
+                <ID name="Attendre la date du début de la vente" mc="Standard.AcceptTimeEventAction" uid="8271b5d0-ec74-4d0c-8505-4aab7cb24e61"/>
                 <ATTRIBUTES>
-                  <ATT name="IsCombineDuplicate">true</ATT>
-                  <ATT name="JoinSpec"><![CDATA[and]]></ATT>
-                  <ATT name="Name"><![CDATA[Fork/Join]]></ATT>
+                  <ATT name="TimeExpresion"></ATT>
+                  <ATT name="IsMultipleInstance">false</ATT>
+                  <ATT name="IsCompensation">false</ATT>
+                  <ATT name="Name"><![CDATA[Attendre la date du début de la vente]]></ATT>
                   <ATT name="status">1970354901745664</ATT>
                 </ATTRIBUTES>
                 <DEPENDENCIES>
                   <COMP relation="Outgoing">
                     <OBJECT>
-                      <ID name="ControlFlow" mc="Standard.ControlFlow" uid="07486469-8d70-467a-bc5e-822a620ca9ae"/>
+                      <ID name="ControlFlow" mc="Standard.ControlFlow" uid="06778a3a-ca43-432c-9e54-33c674e158e8"/>
                       <ATTRIBUTES>
                         <ATT name="Guard"></ATT>
                         <ATT name="Weight"><![CDATA[1]]></ATT>
@@ -274,32 +307,18 @@
                       </DEPENDENCIES>
                     </OBJECT>
                   </COMP>
-                </DEPENDENCIES>
-              </OBJECT>
-              <OBJECT>
-                <ID name="Time Event" mc="Standard.AcceptTimeEventAction" uid="8271b5d0-ec74-4d0c-8505-4aab7cb24e61"/>
-                <ATTRIBUTES>
-                  <ATT name="TimeExpresion"></ATT>
-                  <ATT name="IsMultipleInstance">false</ATT>
-                  <ATT name="IsCompensation">false</ATT>
-                  <ATT name="Name"><![CDATA[Time Event]]></ATT>
-                  <ATT name="status">1970354901745664</ATT>
-                </ATTRIBUTES>
-                <DEPENDENCIES>
-                  <COMP relation="Outgoing">
+                  <COMP relation="Descriptor">
                     <OBJECT>
-                      <ID name="ControlFlow" mc="Standard.ControlFlow" uid="a544f0ff-c402-48ab-bba3-b1fe17b375b9"/>
+                      <ID name="" mc="Standard.Note" uid="b4b6cf87-6307-4d90-9472-403df845616a"/>
                       <ATTRIBUTES>
-                        <ATT name="Guard"></ATT>
-                        <ATT name="Weight"><![CDATA[1]]></ATT>
-                        <ATT name="Name"><![CDATA[ControlFlow]]></ATT>
+                        <ATT name="Content"><![CDATA[<Saisir le texte de la note ici>]]></ATT>
+                        <ATT name="MimeType"></ATT>
+                        <ATT name="Name"></ATT>
                         <ATT name="status">1970354901745664</ATT>
                       </ATTRIBUTES>
                       <DEPENDENCIES>
-                        <LINK relation="Target">
-                          <REFOBJ>
-                            <ID name="Fork/Join" mc="Standard.ForkJoinNode" uid="8ac25c82-c0a9-4e78-b660-66957dfec0ac"/>
-                          </REFOBJ>
+                        <LINK relation="Model">
+                          <FOREIGNID name="description" mc="Standard.NoteType" uid="00000000-0000-3e81-0000-000000000000"/>
                         </LINK>
                       </DEPENDENCIES>
                     </OBJECT>
@@ -328,7 +347,7 @@
                       <DEPENDENCIES>
                         <LINK relation="Target">
                           <REFOBJ>
-                            <ID name="Requete de livrer" mc="Standard.OpaqueAction" uid="a17179b8-8a6d-40cc-8c96-4de0a7af21c8"/>
+                            <ID name="Recuperer commande (livraison)" mc="Standard.OpaqueAction" uid="a17179b8-8a6d-40cc-8c96-4de0a7af21c8"/>
                           </REFOBJ>
                         </LINK>
                       </DEPENDENCIES>
@@ -382,51 +401,6 @@
           <DEPENDENCIES>
             <COMP relation="ContainedNode">
               <OBJECT>
-                <ID name="Fork/Join" mc="Standard.ForkJoinNode" uid="1612c319-6cca-44b0-9881-1852dad9cd10"/>
-                <ATTRIBUTES>
-                  <ATT name="IsCombineDuplicate">true</ATT>
-                  <ATT name="JoinSpec"><![CDATA[and]]></ATT>
-                  <ATT name="Name"><![CDATA[Fork/Join]]></ATT>
-                  <ATT name="status">1970354901745664</ATT>
-                </ATTRIBUTES>
-                <DEPENDENCIES>
-                  <COMP relation="Outgoing">
-                    <OBJECT>
-                      <ID name="ControlFlow" mc="Standard.ControlFlow" uid="05ee3a15-dffd-4795-8333-973ba624a61e"/>
-                      <ATTRIBUTES>
-                        <ATT name="Guard"></ATT>
-                        <ATT name="Weight"><![CDATA[1]]></ATT>
-                        <ATT name="Name"><![CDATA[ControlFlow]]></ATT>
-                        <ATT name="status">1970354901745664</ATT>
-                      </ATTRIBUTES>
-                      <DEPENDENCIES>
-                        <LINK relation="Target">
-                          <REFOBJ>
-                            <ID name="Proposer articles" mc="Standard.OpaqueAction" uid="1c8d0328-e33c-49d8-aaff-279340f77bff"/>
-                          </REFOBJ>
-                        </LINK>
-                      </DEPENDENCIES>
-                    </OBJECT>
-                    <OBJECT>
-                      <ID name="ControlFlow" mc="Standard.ControlFlow" uid="d9775392-89b1-468a-98a0-2d7d69eb8619"/>
-                      <ATTRIBUTES>
-                        <ATT name="Guard"></ATT>
-                        <ATT name="Weight"><![CDATA[1]]></ATT>
-                        <ATT name="Name"><![CDATA[ControlFlow]]></ATT>
-                        <ATT name="status">1970354901745664</ATT>
-                      </ATTRIBUTES>
-                      <DEPENDENCIES>
-                        <LINK relation="Target">
-                          <REFOBJ>
-                            <ID name="Récuperer commandes" mc="Standard.OpaqueAction" uid="f890221c-3d1a-4ff0-9de3-8bdd86755785"/>
-                          </REFOBJ>
-                        </LINK>
-                      </DEPENDENCIES>
-                    </OBJECT>
-                  </COMP>
-                </DEPENDENCIES>
-              </OBJECT>
-              <OBJECT>
                 <ID name="Reception mail" mc="Standard.AcceptSignalAction" uid="5264da47-51a7-4074-a3c8-7441e836a341"/>
                 <ATTRIBUTES>
                   <ATT name="IsMultipleInstance">false</ATT>
@@ -447,7 +421,7 @@
                       <DEPENDENCIES>
                         <LINK relation="Target">
                           <REFOBJ>
-                            <ID name="Decision-Merge" mc="Standard.DecisionMergeNode" uid="82f47e6d-b6e8-4c3e-b9c4-b48943dbb1ec"/>
+                            <ID name="s'inscrire à la vente ?" mc="Standard.DecisionMergeNode" uid="82f47e6d-b6e8-4c3e-b9c4-b48943dbb1ec"/>
                           </REFOBJ>
                         </LINK>
                       </DEPENDENCIES>
@@ -456,11 +430,11 @@
                 </DEPENDENCIES>
               </OBJECT>
               <OBJECT>
-                <ID name="Decision-Merge" mc="Standard.DecisionMergeNode" uid="82f47e6d-b6e8-4c3e-b9c4-b48943dbb1ec"/>
+                <ID name="s'inscrire à la vente ?" mc="Standard.DecisionMergeNode" uid="82f47e6d-b6e8-4c3e-b9c4-b48943dbb1ec"/>
                 <ATTRIBUTES>
                   <ATT name="DecisionKind">ExclusiveDecision</ATT>
                   <ATT name="DecisionInputBehavior"></ATT>
-                  <ATT name="Name"><![CDATA[Decision-Merge]]></ATT>
+                  <ATT name="Name"><![CDATA[s'inscrire à la vente ?]]></ATT>
                   <ATT name="status">1970354901745664</ATT>
                 </ATTRIBUTES>
                 <DEPENDENCIES>
@@ -482,7 +456,7 @@
                       </DEPENDENCIES>
                     </OBJECT>
                     <OBJECT>
-                      <ID name="ControlFlow" mc="Standard.ControlFlow" uid="c311a27d-beb5-443e-8cda-40152168052a"/>
+                      <ID name="ControlFlow" mc="Standard.ControlFlow" uid="e6df89ea-4481-493e-9ffa-21ae4fbb4aae"/>
                       <ATTRIBUTES>
                         <ATT name="Guard"><![CDATA[NON]]></ATT>
                         <ATT name="Weight"><![CDATA[1]]></ATT>
@@ -492,21 +466,13 @@
                       <DEPENDENCIES>
                         <LINK relation="Target">
                           <REFOBJ>
-                            <ID name="Flow Final Node" mc="Standard.FlowFinalNode" uid="73768165-eea6-40f5-b6aa-ab501bf42ea2"/>
+                            <ID name="Activity Final Node1" mc="Standard.ActivityFinalNode" uid="3cbb4ff1-0063-4388-a9d3-33fe5008fc4d"/>
                           </REFOBJ>
                         </LINK>
                       </DEPENDENCIES>
                     </OBJECT>
                   </COMP>
                 </DEPENDENCIES>
-              </OBJECT>
-              <OBJECT>
-                <ID name="Flow Final Node" mc="Standard.FlowFinalNode" uid="73768165-eea6-40f5-b6aa-ab501bf42ea2"/>
-                <ATTRIBUTES>
-                  <ATT name="Name"><![CDATA[Flow Final Node]]></ATT>
-                  <ATT name="status">1970354901745664</ATT>
-                </ATTRIBUTES>
-                <DEPENDENCIES></DEPENDENCIES>
               </OBJECT>
               <OBJECT>
                 <ID name="Choisir articles" mc="Standard.OpaqueAction" uid="d9734778-d07f-4ee8-9a04-ee7ceb632cae"/>
@@ -537,6 +503,67 @@
                     </OBJECT>
                   </COMP>
                 </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="Reception de la date de livraison" mc="Standard.AcceptSignalAction" uid="732d2758-3c4d-4c62-8d1d-1fe3fdf64fcf"/>
+                <ATTRIBUTES>
+                  <ATT name="IsMultipleInstance">false</ATT>
+                  <ATT name="IsCompensation">false</ATT>
+                  <ATT name="Name"><![CDATA[Reception de la date de livraison]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Outgoing">
+                    <OBJECT>
+                      <ID name="ControlFlow" mc="Standard.ControlFlow" uid="98c7edb0-620b-4b37-81ab-1bd12c5e333d"/>
+                      <ATTRIBUTES>
+                        <ATT name="Guard"></ATT>
+                        <ATT name="Weight"><![CDATA[1]]></ATT>
+                        <ATT name="Name"><![CDATA[ControlFlow]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Target">
+                          <REFOBJ>
+                            <ID name="Activity Final Node" mc="Standard.ActivityFinalNode" uid="d9bc8c6c-ef7c-417a-9749-5eff577ca91d"/>
+                          </REFOBJ>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                  <COMP relation="Descriptor">
+                    <OBJECT>
+                      <ID name="" mc="Standard.Note" uid="32782c5b-e62b-4b92-acca-b1c40558d0f4"/>
+                      <ATTRIBUTES>
+                        <ATT name="Content"><![CDATA[<Saisir le texte de la note ici>]]></ATT>
+                        <ATT name="MimeType"></ATT>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Model">
+                          <FOREIGNID name="description" mc="Standard.NoteType" uid="00000000-0000-3e81-0000-000000000000"/>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="Activity Final Node" mc="Standard.ActivityFinalNode" uid="d9bc8c6c-ef7c-417a-9749-5eff577ca91d"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[Activity Final Node]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="Activity Final Node1" mc="Standard.ActivityFinalNode" uid="3cbb4ff1-0063-4388-a9d3-33fe5008fc4d"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[Activity Final Node1]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
               </OBJECT>
             </COMP>
             <COMP relation="Descriptor">
@@ -587,7 +614,7 @@
                       <DEPENDENCIES>
                         <LINK relation="Target">
                           <REFOBJ>
-                            <ID name="Action" mc="Standard.OpaqueAction" uid="52b4715c-feb2-41f6-955f-d99733fd53cf"/>
+                            <ID name="Proposer vente" mc="Standard.OpaqueAction" uid="52b4715c-feb2-41f6-955f-d99733fd53cf"/>
                           </REFOBJ>
                         </LINK>
                       </DEPENDENCIES>
@@ -596,12 +623,12 @@
                 </DEPENDENCIES>
               </OBJECT>
               <OBJECT>
-                <ID name="Action" mc="Standard.OpaqueAction" uid="52b4715c-feb2-41f6-955f-d99733fd53cf"/>
+                <ID name="Proposer vente" mc="Standard.OpaqueAction" uid="52b4715c-feb2-41f6-955f-d99733fd53cf"/>
                 <ATTRIBUTES>
-                  <ATT name="Body"><![CDATA[Proposer vente]]></ATT>
+                  <ATT name="Body"></ATT>
                   <ATT name="IsMultipleInstance">false</ATT>
                   <ATT name="IsCompensation">false</ATT>
-                  <ATT name="Name"><![CDATA[Action]]></ATT>
+                  <ATT name="Name"><![CDATA[Proposer vente]]></ATT>
                   <ATT name="status">1970354901745664</ATT>
                 </ATTRIBUTES>
                 <DEPENDENCIES>
@@ -623,19 +650,112 @@
                       </DEPENDENCIES>
                     </OBJECT>
                   </COMP>
+                  <COMP relation="Descriptor">
+                    <OBJECT>
+                      <ID name="" mc="Standard.Note" uid="4d66f52a-947e-4123-8d5e-626942e23ece"/>
+                      <ATTRIBUTES>
+                        <ATT name="Content"></ATT>
+                        <ATT name="MimeType"></ATT>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Model">
+                          <FOREIGNID name="description" mc="Standard.NoteType" uid="00000000-0000-3e81-0000-000000000000"/>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
                 </DEPENDENCIES>
               </OBJECT>
               <OBJECT>
-                <ID name="Récuperer commandes" mc="Standard.OpaqueAction" uid="f890221c-3d1a-4ff0-9de3-8bdd86755785"/>
+                <ID name="Recuperer commande (livraison)" mc="Standard.OpaqueAction" uid="a17179b8-8a6d-40cc-8c96-4de0a7af21c8"/>
                 <ATTRIBUTES>
                   <ATT name="Body"></ATT>
                   <ATT name="IsMultipleInstance">false</ATT>
                   <ATT name="IsCompensation">false</ATT>
-                  <ATT name="Name"><![CDATA[Récuperer commandes]]></ATT>
+                  <ATT name="Name"><![CDATA[Recuperer commande (livraison)]]></ATT>
                   <ATT name="status">1970354901745664</ATT>
                 </ATTRIBUTES>
-                <DEPENDENCIES></DEPENDENCIES>
+                <DEPENDENCIES>
+                  <COMP relation="Outgoing">
+                    <OBJECT>
+                      <ID name="ControlFlow" mc="Standard.ControlFlow" uid="dc083c4a-6c4a-4ef2-acb6-bad8b4f6f753"/>
+                      <ATTRIBUTES>
+                        <ATT name="Guard"></ATT>
+                        <ATT name="Weight"><![CDATA[1]]></ATT>
+                        <ATT name="Name"><![CDATA[ControlFlow]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Target">
+                          <REFOBJ>
+                            <ID name="Date de livraison" mc="Standard.SendSignalAction" uid="8a262b6b-c81a-44f5-8687-9d98f04affca"/>
+                          </REFOBJ>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
               </OBJECT>
+              <OBJECT>
+                <ID name="Date de livraison" mc="Standard.SendSignalAction" uid="8a262b6b-c81a-44f5-8687-9d98f04affca"/>
+                <ATTRIBUTES>
+                  <ATT name="IsMultipleInstance">false</ATT>
+                  <ATT name="IsCompensation">false</ATT>
+                  <ATT name="Name"><![CDATA[Date de livraison]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Outgoing">
+                    <OBJECT>
+                      <ID name="ControlFlow" mc="Standard.ControlFlow" uid="900831e6-e843-4b45-a18d-b7843ddb9d23"/>
+                      <ATTRIBUTES>
+                        <ATT name="Guard"></ATT>
+                        <ATT name="Weight"><![CDATA[1]]></ATT>
+                        <ATT name="Name"><![CDATA[ControlFlow]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Target">
+                          <REFOBJ>
+                            <ID name="Reception de la date de livraison" mc="Standard.AcceptSignalAction" uid="732d2758-3c4d-4c62-8d1d-1fe3fdf64fcf"/>
+                          </REFOBJ>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                  <COMP relation="Descriptor">
+                    <OBJECT>
+                      <ID name="" mc="Standard.Note" uid="6a1c97de-1b98-4de6-8906-b1afd62bf591"/>
+                      <ATTRIBUTES>
+                        <ATT name="Content"><![CDATA[<Saisir le texte de la note ici>]]></ATT>
+                        <ATT name="MimeType"></ATT>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Model">
+                          <FOREIGNID name="description" mc="Standard.NoteType" uid="00000000-0000-3e81-0000-000000000000"/>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="PayPal" mc="Standard.ActivityPartition" uid="bab2e5dc-5f2f-4d9d-8bca-028348a4e482"/>
+          <ATTRIBUTES>
+            <ATT name="IsDimension">false</ATT>
+            <ATT name="IsExternal">false</ATT>
+            <ATT name="Name"><![CDATA[PayPal]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="ContainedNode">
               <OBJECT>
                 <ID name="Paiement" mc="Standard.OpaqueAction" uid="f22cc63c-f82f-4811-9f08-5e568e96e032"/>
                 <ATTRIBUTES>
@@ -719,16 +839,21 @@
                 </ATTRIBUTES>
                 <DEPENDENCIES></DEPENDENCIES>
               </OBJECT>
+            </COMP>
+            <COMP relation="Descriptor">
               <OBJECT>
-                <ID name="Requete de livrer" mc="Standard.OpaqueAction" uid="a17179b8-8a6d-40cc-8c96-4de0a7af21c8"/>
+                <ID name="" mc="Standard.Note" uid="3ff089bc-462c-4b94-a7e2-ef29cb908abd"/>
                 <ATTRIBUTES>
-                  <ATT name="Body"></ATT>
-                  <ATT name="IsMultipleInstance">false</ATT>
-                  <ATT name="IsCompensation">false</ATT>
-                  <ATT name="Name"><![CDATA[Requete de livrer]]></ATT>
+                  <ATT name="Content"><![CDATA[<Saisir le texte de la note ici>]]></ATT>
+                  <ATT name="MimeType"></ATT>
+                  <ATT name="Name"></ATT>
                   <ATT name="status">1970354901745664</ATT>
                 </ATTRIBUTES>
-                <DEPENDENCIES></DEPENDENCIES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="description" mc="Standard.NoteType" uid="00000000-0000-3e81-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
               </OBJECT>
             </COMP>
           </DEPENDENCIES>
@@ -746,7 +871,22 @@
             <ATT name="Name"><![CDATA[locals]]></ATT>
             <ATT name="status">1970354901745664</ATT>
           </ATTRIBUTES>
-          <DEPENDENCIES></DEPENDENCIES>
+          <DEPENDENCIES>
+            <COMP relation="Declared">
+              <OBJECT>
+                <ID name="" mc="Standard.BindableInstance" uid="541b379b-4d7f-4d23-a1cf-6f00766da327"/>
+                <ATTRIBUTES>
+                  <ATT name="IsConstant">false</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="Value"></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
         </OBJECT>
       </COMP>
       <COMP relation="Product">
