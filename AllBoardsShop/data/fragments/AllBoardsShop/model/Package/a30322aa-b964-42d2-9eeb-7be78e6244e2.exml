@@ -28,13 +28,14 @@
         <COMPID name="Fournisseur" mc="Standard.Actor" uid="f8eecd69-af09-44f7-8f85-6ed2e77c2b89"/>
         <COMPID name="Proposer une vente" mc="Standard.UseCase" uid="1c3dd14b-5c9b-4391-b1d3-fe58e1b7baa1"/>
         <COMPID name="Recuperer commandes" mc="Standard.UseCase" uid="99fa394d-9551-4f3e-9bde-e68fb82fe263"/>
-        <COMPID name="Fournir description" mc="Standard.UseCase" uid="321b6402-f7a0-4a78-9c54-7a62ae4c7718"/>
+        <COMPID name="Fournir description vente" mc="Standard.UseCase" uid="321b6402-f7a0-4a78-9c54-7a62ae4c7718"/>
         <COMPID name="Notifier Client" mc="Standard.UseCase" uid="73860366-dcbd-4f5c-8f6d-e53ea4173db4"/>
         <COMPID name="Modifier Informations" mc="Standard.UseCase" uid="8d46ede6-5e55-4b86-ab76-2277aa42c392"/>
         <COMPID name="Livrer Magasin" mc="Standard.UseCase" uid="7f033b47-f503-4c9d-af5e-3833d6446576"/>
         <COMPID name="Finaliser la commande" mc="Standard.UseCase" uid="147387d1-bb29-4420-8702-d63bdbdc2e1f"/>
         <COMPID name="Payer la commande" mc="Standard.UseCase" uid="0f3bb53e-04c3-4485-8f73-48ae30e7b9bf"/>
         <COMPID name="Paypal" mc="Standard.Actor" uid="d1483ffd-e144-4283-a402-37ce5404caa4"/>
+        <COMPID name="Fournir informations fournisseur" mc="Standard.UseCase" uid="61961718-784e-4f15-9c15-cab4ecd8e685"/>
       </COMP>
       <COMP relation="Product">
         <COMPID name="allboardsshop Use Case diagram" mc="Standard.UseCaseDiagram" uid="29f84c1d-638f-46af-86cc-65bde3c2ce30"/>

@@ -18,6 +18,10 @@
         <COMPID name="ControlProposerVente" mc="Standard.Class" uid="222d17f3-b8c0-4e7f-8471-23564d317947"/>
         <COMPID name="Activite" mc="Standard.DataType" uid="bd95db06-c64a-412f-9ed4-970ea13af445"/>
         <COMPID name="Photo" mc="Standard.DataType" uid="90397063-fba2-4acd-b6c3-5a3d5135a27c"/>
+        <COMPID name="Requete" mc="Standard.Class" uid="04b5d19f-4868-42cc-9a0d-f1675ba69934"/>
+        <COMPID name="Produit" mc="Standard.Class" uid="0f11a3dd-2783-4bc5-b79e-de971fb0a330"/>
+        <COMPID name="Vente" mc="Standard.Class" uid="da369b4e-7cb9-475e-854e-0d29a4bd3616"/>
+        <COMPID name="Fournisseur" mc="Standard.Class" uid="bf82a866-d29e-4ad2-9ccd-85535f42231a"/>
       </COMP>
       <COMP relation="Product">
         <COMPID name="Diagramme de classe Participante" mc="Standard.ClassDiagram" uid="9b70ce89-fa91-4e0b-bbee-dd2a839436ec"/>
