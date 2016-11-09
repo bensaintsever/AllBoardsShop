@@ -1,0 +1,40 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Diagramme de séquence Interaction" version="4">
+  <OBJECT>
+    <ID name="Diagramme de séquence Interaction" mc="Standard.SequenceDiagram" uid="8db504bc-e8ed-483d-b7bd-eebc2c5a6584"/>
+    <PID name="Interaction" mc="Standard.Interaction" uid="4fe446f1-2e72-4fe6-8c3d-90b5f448b74e"/>
+    <ATTRIBUTES>
+      <ATT name="UiDataVersion">34</ATT>
+      <ATT name="UiData"><![CDATA[eJztWt1uozgUfhXEPQQI5EfKdDRNqm41mWnV7q60V5WxDwlTg7vGmYRH2ufYF1sTkmxKOoaGJG0k7hKDzzk+fN+xzweDz4uIaj+BJyGLP+m2aena54vBrf8DsNBCIod0TaTP8ElnfGJGjAANmUlCNOEoMoGEgnEzgb9nEGMwgUIEsUg2I+sbr6OH1cgoH9G1CP1g/HHj2tIvBnecPQMXqRajSHqkKGUzMUICyWt/IjqDVSjxjFK9dTForSfsTH0QKQX9xUIc1UKS7P7ExIyDmc+tEN8QJRgRIGtnVwtxD0FFL9+lidVMDRZi5N/IGJc/sx8EAjSjorDIVr4c1cI5UCSAyDgKOfuWDWk/sxGZnpcPQ+sR37NcHxvQA2K4vTYx/K5PDAAfO9hDHa/nqhNOUSK+xmwej5EPtOD7QfAwnugXK3cRaAS05N9/8iC0m1gAR1jIPA9ay3nKFTIKN/GQRc8sCbM5v3BWwdRwGlLCIbMwDhPxAi7tvXBPw0DeGIME/Hj1881I3wrCrRfEOoQ7ivDy2pDFieAojEWVqBaFzGbPaQJ8gyK7Y6lBkZYYKJk+D4mYlpgow+UUwslUlBhxrZJI1hlVcWqdbM3HHafrd9tG2/Jsw21bltHvosAIHAg8B3cCv110V4HYr1Q07+gVLStnee08UiGqk7R9KhD/OAWmU4/bU5APim/Vmd+WA5LhQvI7A3eNDXaHZW/ebbtVsSlNLdLaAPUagO7ayiFSE6a9o8D09Me//mkB2W0AuVfFTKZs/hjiHROXTPpA8SYNgs9AvbqlpSdI54yTEmMBokmZNYHw02MiD6rADhMafSXpFUxtgLTdo1lKkq5JiVkUsdhcOs7vWl2S9BzlDce3bPQqH81RcXKi2sqOs2HquTG1Crnei6pVY6vL1Va+rZbRWClRlO+1PiPp1k57Kf8e9BRY7AIqcFnZRTfHwJNwOYPFPodABWgr4rmmfHEYDcVWtsnvLqK4XgmtykQUp0QBqaKiGPYBVJQyI28SUSwfddwe6hp9bHuG6wE2+lbXM/pe0MfI63vg7kH210qUsg8/MxVlj6ztVZ3sjyOj2Eql4ex1FFvZfx9+B5V0aEB6JCnFVmoQZ6SlOMp+8wigLPKmAWUjpxxPTnHU77zPS05xKr/3brh6HlxtBJWqDahT8yX+xxNUHGVL3RwHT8Tm00oqu5cKfsZh/JQonBRuv5yMOJrLhYxRKtH4EmBqtWRNEZIbkFzJTGQb3rbF02xyb5v1Xh9GhcUCvPkY6tocf/nr6v7x8svw6/X97R/fR4eG1C+tbD+t/4GzDQP11wkNDA4Pg99v705WUv4DnAupOQ==]]></ATT>
+      <ATT name="PdeProperties"></ATT>
+      <ATT name="Name"><![CDATA[Diagramme de séquence Interaction]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <LINK relation="Represented">
+        <REFOBJ>
+          <ID name="r" mc="Standard.Lifeline" uid="bc627b73-3051-4300-97af-f2ef52c6fb30"/>
+        </REFOBJ>
+        <REFOBJ>
+          <ID name="r1" mc="Standard.Lifeline" uid="0ba648a7-9c15-45ec-9075-95f9ca595e45"/>
+        </REFOBJ>
+      </LINK>
+      <COMP relation="Descriptor">
+        <OBJECT>
+          <ID name="" mc="Standard.Note" uid="eb393c68-8e06-4520-8693-7104ebc3de19"/>
+          <ATTRIBUTES>
+            <ATT name="Content"></ATT>
+            <ATT name="MimeType"></ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Model">
+              <FOREIGNID name="description" mc="Standard.NoteType" uid="00000000-0000-3e81-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

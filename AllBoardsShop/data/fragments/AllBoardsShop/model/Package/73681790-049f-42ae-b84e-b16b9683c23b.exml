@@ -18,6 +18,7 @@
         <COMPID name="UseCaseDiagram" mc="Standard.Package" uid="a30322aa-b964-42d2-9eeb-7be78e6244e2"/>
         <COMPID name="SequenceDiagram" mc="Standard.Package" uid="369ac7d4-2b08-44b2-9c4a-e5059d66a42f"/>
         <COMPID name="ClassesParticipanteDiagram" mc="Standard.Package" uid="8013d8c9-8f6f-40db-9378-81e161bebbd7"/>
+        <COMPID name="Sequence Detaille" mc="Standard.Package" uid="d8670c03-8b71-4012-85ce-2ff36ac4fadd"/>
       </COMP>
       <LINK relation="Extension">
         <ID name="Boundary" mc="Standard.Stereotype" uid="434f54e2-2cf4-426e-955c-49424c6204c3"/>
