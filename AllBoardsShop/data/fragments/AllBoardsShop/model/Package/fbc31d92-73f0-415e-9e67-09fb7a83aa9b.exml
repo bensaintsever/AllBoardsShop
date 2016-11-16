@@ -1,7 +1,7 @@
 <?xml version="1.0" ?>
-<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="ClassesParticipanteDiagram" version="4">
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="BusinessClassDiagram" version="4">
   <OBJECT>
-    <ID name="ClassesParticipanteDiagram" mc="Standard.Package" uid="8013d8c9-8f6f-40db-9378-81e161bebbd7"/>
+    <ID name="BusinessClassDiagram" mc="Standard.Package" uid="fbc31d92-73f0-415e-9e67-09fb7a83aa9b"/>
     <PID name="allboardsshop" mc="Standard.Package" uid="73681790-049f-42ae-b84e-b16b9683c23b"/>
     <ATTRIBUTES>
       <ATT name="IsInstantiable">false</ATT>
@@ -9,38 +9,26 @@
       <ATT name="IsLeaf">false</ATT>
       <ATT name="IsRoot">false</ATT>
       <ATT name="Visibility">Public</ATT>
-      <ATT name="Name"><![CDATA[ClassesParticipanteDiagram]]></ATT>
+      <ATT name="Name"><![CDATA[BusinessClassDiagram]]></ATT>
       <ATT name="status">1970354901745664</ATT>
     </ATTRIBUTES>
     <DEPENDENCIES>
       <COMP relation="OwnedElement">
-        <COMPID name="BoundaryProposerVente" mc="Standard.Class" uid="90918313-e849-456b-a8d3-dc6b411ac0d8"/>
-        <COMPID name="ControlProposerVente" mc="Standard.Class" uid="222d17f3-b8c0-4e7f-8471-23564d317947"/>
-        <COMPID name="Activite" mc="Standard.DataType" uid="bd95db06-c64a-412f-9ed4-970ea13af445"/>
-        <COMPID name="Photo" mc="Standard.DataType" uid="90397063-fba2-4acd-b6c3-5a3d5135a27c"/>
-        <COMPID name="Requete" mc="Standard.Class" uid="04b5d19f-4868-42cc-9a0d-f1675ba69934"/>
-        <COMPID name="Produit" mc="Standard.Class" uid="0f11a3dd-2783-4bc5-b79e-de971fb0a330"/>
-        <COMPID name="Vente" mc="Standard.Class" uid="da369b4e-7cb9-475e-854e-0d29a4bd3616"/>
-        <COMPID name="Fournisseur" mc="Standard.Class" uid="bf82a866-d29e-4ad2-9ccd-85535f42231a"/>
-        <COMPID name="Map" mc="Standard.DataType" uid="3f17e453-0ae2-4fef-aca4-308a8d46aef1"/>
-        <COMPID name="Map" mc="Standard.Class" uid="e3d1d864-2f57-4288-a3b5-36b3ebb79a73"/>
-        <COMPID name="Date" mc="Standard.Class" uid="4db400d0-3e81-4126-957b-fd4050120ddb"/>
-        <COMPID name="List" mc="Standard.Class" uid="d265263c-3f76-4625-b8d4-5edf85bb5d82"/>
         <OBJECT>
-          <ID name="Activite" mc="Standard.Enumeration" uid="d4d0be85-f556-4e19-b940-f26321bf448b"/>
+          <ID name="Enumeration" mc="Standard.Enumeration" uid="6a4ea779-7666-4df0-89a2-8a478aaf6a96"/>
           <ATTRIBUTES>
             <ATT name="IsElementary">true</ATT>
             <ATT name="IsAbstract">false</ATT>
             <ATT name="IsLeaf">false</ATT>
             <ATT name="IsRoot">false</ATT>
             <ATT name="Visibility">Public</ATT>
-            <ATT name="Name"><![CDATA[Activite]]></ATT>
+            <ATT name="Name"><![CDATA[Enumeration]]></ATT>
             <ATT name="status">1970354901745664</ATT>
           </ATTRIBUTES>
           <DEPENDENCIES>
             <COMP relation="OwnedAttribute">
               <OBJECT>
-                <ID name="SKI" mc="Standard.Attribute" uid="2c1808f3-45cf-43a3-bc60-5e03a56d5650"/>
+                <ID name="HARDGOOD" mc="Standard.Attribute" uid="7466a4ad-13c7-4a30-9f69-76cb28499f18"/>
                 <ATTRIBUTES>
                   <ATT name="TypeConstraint"></ATT>
                   <ATT name="Value"></ATT>
@@ -54,53 +42,13 @@
                   <ATT name="Visibility">VisibilityUndefined</ATT>
                   <ATT name="IsClass">false</ATT>
                   <ATT name="IsAbstract">false</ATT>
-                  <ATT name="Name"><![CDATA[SKI]]></ATT>
-                  <ATT name="status">1970354901745664</ATT>
-                </ATTRIBUTES>
-                <DEPENDENCIES></DEPENDENCIES>
-              </OBJECT>
-              <OBJECT>
-                <ID name="SKATE" mc="Standard.Attribute" uid="e2d92cac-8680-440d-86bf-6f2408bfb72f"/>
-                <ATTRIBUTES>
-                  <ATT name="TypeConstraint"></ATT>
-                  <ATT name="Value"></ATT>
-                  <ATT name="TargetIsClass">false</ATT>
-                  <ATT name="Changeable">ReadWrite</ATT>
-                  <ATT name="IsDerived">false</ATT>
-                  <ATT name="IsOrdered">false</ATT>
-                  <ATT name="IsUnique">false</ATT>
-                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
-                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
-                  <ATT name="Visibility">VisibilityUndefined</ATT>
-                  <ATT name="IsClass">false</ATT>
-                  <ATT name="IsAbstract">false</ATT>
-                  <ATT name="Name"><![CDATA[SKATE]]></ATT>
-                  <ATT name="status">1970354901745664</ATT>
-                </ATTRIBUTES>
-                <DEPENDENCIES></DEPENDENCIES>
-              </OBJECT>
-              <OBJECT>
-                <ID name="FUNBOARD" mc="Standard.Attribute" uid="e289eb55-2861-464d-a04f-01631dd30d1d"/>
-                <ATTRIBUTES>
-                  <ATT name="TypeConstraint"></ATT>
-                  <ATT name="Value"></ATT>
-                  <ATT name="TargetIsClass">false</ATT>
-                  <ATT name="Changeable">ReadWrite</ATT>
-                  <ATT name="IsDerived">false</ATT>
-                  <ATT name="IsOrdered">false</ATT>
-                  <ATT name="IsUnique">false</ATT>
-                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
-                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
-                  <ATT name="Visibility">VisibilityUndefined</ATT>
-                  <ATT name="IsClass">false</ATT>
-                  <ATT name="IsAbstract">false</ATT>
-                  <ATT name="Name"><![CDATA[FUNBOARD]]></ATT>
+                  <ATT name="Name"><![CDATA[HARDGOOD]]></ATT>
                   <ATT name="status">1970354901745664</ATT>
                 </ATTRIBUTES>
                 <DEPENDENCIES>
                   <COMP relation="Descriptor">
                     <OBJECT>
-                      <ID name="" mc="Standard.Note" uid="778e5a25-19ff-4a52-b9f4-70208d9ed921"/>
+                      <ID name="" mc="Standard.Note" uid="b0c6cc87-1b53-48a8-9ce8-e4f1f561f3ff"/>
                       <ATTRIBUTES>
                         <ATT name="Content"><![CDATA[<Enter note text here>]]></ATT>
                         <ATT name="MimeType"></ATT>
@@ -117,7 +65,7 @@
                 </DEPENDENCIES>
               </OBJECT>
               <OBJECT>
-                <ID name="SNOWBOARD" mc="Standard.Attribute" uid="f8953f29-d207-4b5f-8246-cc44f2df8df6"/>
+                <ID name="SOFTGOOD" mc="Standard.Attribute" uid="72849ec8-1f37-4ab5-b6fc-3f51d01a4185"/>
                 <ATTRIBUTES>
                   <ATT name="TypeConstraint"></ATT>
                   <ATT name="Value"></ATT>
@@ -131,13 +79,66 @@
                   <ATT name="Visibility">VisibilityUndefined</ATT>
                   <ATT name="IsClass">false</ATT>
                   <ATT name="IsAbstract">false</ATT>
-                  <ATT name="Name"><![CDATA[SNOWBOARD]]></ATT>
+                  <ATT name="Name"><![CDATA[SOFTGOOD]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Descriptor">
+                    <OBJECT>
+                      <ID name="" mc="Standard.Note" uid="ac381c61-480a-4e24-8925-1c909aa641c3"/>
+                      <ATTRIBUTES>
+                        <ATT name="Content"><![CDATA[<Enter note text here>]]></ATT>
+                        <ATT name="MimeType"></ATT>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Model">
+                          <FOREIGNID name="description" mc="Standard.NoteType" uid="00000000-0000-3e81-0000-000000000000"/>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="Taille" mc="Standard.Enumeration" uid="42ca8ebc-386c-4c3d-a27b-078836383ebe"/>
+          <ATTRIBUTES>
+            <ATT name="IsElementary">true</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="IsLeaf">false</ATT>
+            <ATT name="IsRoot">false</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="Name"><![CDATA[Taille]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="OwnedAttribute">
+              <OBJECT>
+                <ID name="XS" mc="Standard.Attribute" uid="8d75bd6e-70ca-4ef3-a276-1090bafdc169"/>
+                <ATTRIBUTES>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="Value"></ATT>
+                  <ATT name="TargetIsClass">false</ATT>
+                  <ATT name="Changeable">ReadWrite</ATT>
+                  <ATT name="IsDerived">false</ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="Visibility">VisibilityUndefined</ATT>
+                  <ATT name="IsClass">false</ATT>
+                  <ATT name="IsAbstract">false</ATT>
+                  <ATT name="Name"><![CDATA[XS]]></ATT>
                   <ATT name="status">1970354901745664</ATT>
                 </ATTRIBUTES>
                 <DEPENDENCIES></DEPENDENCIES>
               </OBJECT>
               <OBJECT>
-                <ID name="SURF" mc="Standard.Attribute" uid="4b046506-faab-484e-a553-eb3faa2593e3"/>
+                <ID name="S" mc="Standard.Attribute" uid="4823bcee-af5c-4a3f-9471-881c262c7a3d"/>
                 <ATTRIBUTES>
                   <ATT name="TypeConstraint"></ATT>
                   <ATT name="Value"></ATT>
@@ -151,13 +152,13 @@
                   <ATT name="Visibility">VisibilityUndefined</ATT>
                   <ATT name="IsClass">false</ATT>
                   <ATT name="IsAbstract">false</ATT>
-                  <ATT name="Name"><![CDATA[SURF]]></ATT>
+                  <ATT name="Name"><![CDATA[S]]></ATT>
                   <ATT name="status">1970354901745664</ATT>
                 </ATTRIBUTES>
                 <DEPENDENCIES></DEPENDENCIES>
               </OBJECT>
               <OBJECT>
-                <ID name="WAKEBOARD" mc="Standard.Attribute" uid="e7120d00-b0e3-4c6c-88a9-7ecf0d9b8f07"/>
+                <ID name="M" mc="Standard.Attribute" uid="1b7f719f-ac15-4932-94c3-2a10fb3b7e44"/>
                 <ATTRIBUTES>
                   <ATT name="TypeConstraint"></ATT>
                   <ATT name="Value"></ATT>
@@ -171,7 +172,84 @@
                   <ATT name="Visibility">VisibilityUndefined</ATT>
                   <ATT name="IsClass">false</ATT>
                   <ATT name="IsAbstract">false</ATT>
-                  <ATT name="Name"><![CDATA[WAKEBOARD]]></ATT>
+                  <ATT name="Name"><![CDATA[M]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Descriptor">
+                    <OBJECT>
+                      <ID name="" mc="Standard.Note" uid="251ee64d-7daa-4397-b18c-6321dd65ca4b"/>
+                      <ATTRIBUTES>
+                        <ATT name="Content"><![CDATA[<Enter note text here>]]></ATT>
+                        <ATT name="MimeType"></ATT>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Model">
+                          <FOREIGNID name="description" mc="Standard.NoteType" uid="00000000-0000-3e81-0000-000000000000"/>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="L" mc="Standard.Attribute" uid="e23f934d-9d96-4e52-86f3-971968b502a5"/>
+                <ATTRIBUTES>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="Value"></ATT>
+                  <ATT name="TargetIsClass">false</ATT>
+                  <ATT name="Changeable">ReadWrite</ATT>
+                  <ATT name="IsDerived">false</ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="Visibility">VisibilityUndefined</ATT>
+                  <ATT name="IsClass">false</ATT>
+                  <ATT name="IsAbstract">false</ATT>
+                  <ATT name="Name"><![CDATA[L]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="XL" mc="Standard.Attribute" uid="f475c2f0-4da4-4ef0-abf0-fbd6ec2c91cb"/>
+                <ATTRIBUTES>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="Value"></ATT>
+                  <ATT name="TargetIsClass">false</ATT>
+                  <ATT name="Changeable">ReadWrite</ATT>
+                  <ATT name="IsDerived">false</ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="Visibility">VisibilityUndefined</ATT>
+                  <ATT name="IsClass">false</ATT>
+                  <ATT name="IsAbstract">false</ATT>
+                  <ATT name="Name"><![CDATA[XL]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="XXL" mc="Standard.Attribute" uid="5030f6e4-00a4-4304-963f-322388ddfd21"/>
+                <ATTRIBUTES>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="Value"></ATT>
+                  <ATT name="TargetIsClass">false</ATT>
+                  <ATT name="Changeable">ReadWrite</ATT>
+                  <ATT name="IsDerived">false</ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="Visibility">VisibilityUndefined</ATT>
+                  <ATT name="IsClass">false</ATT>
+                  <ATT name="IsAbstract">false</ATT>
+                  <ATT name="Name"><![CDATA[XXL]]></ATT>
                   <ATT name="status">1970354901745664</ATT>
                 </ATTRIBUTES>
                 <DEPENDENCIES></DEPENDENCIES>
@@ -179,9 +257,11 @@
             </COMP>
           </DEPENDENCIES>
         </OBJECT>
+        <COMPID name="Client" mc="Standard.Class" uid="98c94b34-2e70-43b9-8bbf-ddcdae10dd03"/>
+        <COMPID name="Magasin" mc="Standard.Class" uid="84ff7108-5b14-4923-8572-5033ca4f84c0"/>
       </COMP>
       <COMP relation="Product">
-        <COMPID name="Diagramme de classe Participante" mc="Standard.ClassDiagram" uid="9b70ce89-fa91-4e0b-bbee-dd2a839436ec"/>
+        <COMPID name="BusinessClass diagram" mc="Standard.ClassDiagram" uid="123321f6-184f-4e0e-b405-75ea95788184"/>
       </COMP>
     </DEPENDENCIES>
   </OBJECT>
